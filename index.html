@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>작은 조각에 담긴 시흥 : L.A.Y.E.R. 지역 브랜딩 프로젝트 展</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Noto+Sans+KR:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    html, body { height: 100%; margin: 0; }
+    .font-display { font-family: 'Playfair Display', serif; }
+    .font-body { font-family: 'Noto Sans KR', sans-serif; font-weight: 300; }
+    .divider { width: 40px; height: 1px; }
+    .gallery-item { opacity: 0; transform: translateY(20px); animation: fadeUp 0.6s ease forwards; }
+    @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
+    .tab-btn { transition: all 0.3s ease; text-align: center; flex-shrink: 0; }
+    .tab-btn.active { background-color: #2A5208; color: white; border: 2px solid #2A5208; }
+    .tab-btn.inactive { background-color: transparent; color: #2A5208; border: 2px solid #2A5208; }
+    .tab-btn-fb { transition: all 0.3s ease; text-align: center; flex-shrink: 0; }
+    .tab-btn-fb.active { background-color: #2A5208; color: white; border: 2px solid #2A5208; }
+    .tab-btn-fb.inactive { background-color: transparent; color: #2A5208; border: 2px solid #2A5208; }
+    .artwork-image { cursor: pointer; transition: transform 0.3s ease; }
+    .artwork-image:hover { transform: scale(1.05); }
+    .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 1000; align-items: center; justify-content: center; }
+    .modal.active { display: flex; }
+    .modal-close { position: absolute; top: 16px; right: 16px; background: white; border: none; width: 36px; height: 36px; border-radius: 50%; cursor: pointer; font-size: 18px; display: flex; align-items: center; justify-content: center; }
+  </style>
+</head>
+<body style="background-color: #F8F6F1;">
+
+<!-- ① INTRO -->
+<header class="w-full flex flex-col items-center justify-between px-6 py-12 relative" style="min-height: 100vh;">
+  <div class="pt-8">
+    <p class="font-body text-xs tracking-widest uppercase" style="color: #2A5208; letter-spacing: 0.15em;">L.A.Y.E.R. 지역 브랜딩 프로젝트 展 / 2026</p>
+  </div>
+  <div class="text-center flex-1 flex flex-col items-center justify-center">
+    <h1 class="font-display text-5xl md:text-7xl mb-6" style="color: #1a1a1a; line-height: 1.2;">작은 조각에<br>담긴 시흥</h1>
+    <p class="font-body text-xs tracking-widest uppercase mb-8" style="color: #666; letter-spacing: 0.12em;">SIHEUNG LOCAL BRANDING PROJECT EXHIBITION</p>
+    <div class="divider mx-auto mb-8" style="background-color: #2A5208;"></div>
+    <div class="text-center space-y-2">
+      <p class="font-body text-sm" style="color: #555;">2026. 6. 9. (Mon.) — 6. 24. (Mon.)</p>
+      <p class="font-body text-sm" style="color: #555;">배곧해솔중학교 2학년 미술 작품 전시 / 배곤2청소년문화의집</p>
+    </div>
+  </div>
+  <div class="pb-8 animate-pulse">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2A5208" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+  </div>
+</header>
+
+<section class="max-w-xl mx-auto px-6 pb-16 text-center">
+  <p class="font-body text-sm leading-relaxed" style="color: #666;">학생들이 한 학기 동안 관찰하고, 상상하고, 표현한 작품들을 모았습니다.<br>작은 손끝에서 피어난 세계를 함께 감상해 주세요.</p>
+</section>
+
+<!-- ② 수업 과정 LAYER -->
+<section class="max-w-3xl mx-auto px-6 py-20">
+  <h2 class="font-display text-3xl text-center mb-16" style="color: #1a1a1a;">이렇게 수업했어요</h2>
+  <div class="space-y-12">
+    <div class="flex gap-6 items-start">
+      <div class="flex-shrink-0 pt-1"><p class="font-display text-4xl font-bold" style="color: #2A5208;">L</p></div>
+      <div class="flex-shrink-0"><div class="rounded-sm" style="background: linear-gradient(135deg,#d4e2c8,#a8c690); width:120px; height:90px;"></div></div>
+      <div class="flex-1">
+        <p class="font-display text-lg" style="color: #1a1a1a;">시흥을 눈에 담다</p>
+        <p class="font-body text-sm mt-1" style="color: #666;">시흥의 랜드마크와 자연을 탐구하고 마인드맵으로 정리했어요</p>
+      </div>
+    </div>
+    <div class="flex gap-6 items-start">
+      <div class="flex-shrink-0 pt-1"><p class="font-display text-4xl font-bold" style="color: #2A5208;">A</p></div>
+      <div class="flex-shrink-0"><div class="rounded-sm" style="background: linear-gradient(135deg,#e8ddd0,#c9b896); width:120px; height:90px;"></div></div>
+      <div class="flex-1">
+        <p class="font-display text-lg" style="color: #1a1a1a;">이야기를 찾다</p>
+        <p class="font-body text-sm mt-1" style="color: #666;">내가 담고 싶은 시흥의 이야기를 스스로 선택하고 이유를 썼어요</p>
+      </div>
+    </div>
+    <div class="flex gap-6 items-start">
+      <div class="flex-shrink-0 pt-1"><p class="font-display text-4xl font-bold" style="color: #2A5208;">Y</p></div>
+      <div class="flex-shrink-0"><div class="rounded-sm" style="background: linear-gradient(135deg,#dde4ed,#a3b8d0); width:120px; height:90px;"></div></div>
+      <div class="flex-1">
+        <p class="font-display text-lg" style="color: #1a1a1a;">시흥과 연결하다</p>
+        <p class="font-body text-sm mt-1" style="color: #666;">나의 경험과 시흥을 연결하여 레이어 구성을 스케치했어요</p>
+      </div>
+    </div>
+    <div class="flex gap-6 items-start">
+      <div class="flex-shrink-0 pt-1"><p class="font-display text-4xl font-bold" style="color: #2A5208;">E</p></div>
+      <div class="flex-shrink-0"><div class="rounded-sm" style="background: linear-gradient(135deg,#f0e6d3,#d4c4a8); width:120px; height:90px;"></div></div>
+      <div class="flex-1">
+        <p class="font-display text-lg" style="color: #1a1a1a;">손으로 만들다</p>
+        <p class="font-body text-sm mt-1" style="color: #666;">디지털 작화와 슈링클스 기법으로 입체 기념품을 완성했어요</p>
+      </div>
+    </div>
+    <div class="flex gap-6 items-start">
+      <div class="flex-shrink-0 pt-1"><p class="font-display text-4xl font-bold" style="color: #2A5208;">R</p></div>
+      <div class="flex-shrink-0"><div class="rounded-sm" style="background: linear-gradient(135deg,#e3d8e8,#b8a3c4); width:120px; height:90px;"></div></div>
+      <div class="flex-1">
+        <p class="font-display text-lg" style="color: #1a1a1a;">함께 나누다</p>
+        <p class="font-body text-sm mt-1" style="color: #666;">발표와 전시로 시흥의 이야기를 세상에 내놓았어요</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 작품/카탈로그 바로가기 버튼 -->
+<section class="max-w-3xl mx-auto px-6 py-12">
+  <h2 class="font-display text-3xl text-center mb-12" style="color: #1a1a1a;">작품을 감상해보세요</h2>
+  <div class="flex gap-4 justify-center flex-wrap">
+    <button onclick="document.getElementById('souvenir-gallery').scrollIntoView({behavior:'smooth'})" class="py-3 px-6 rounded-2xl font-body text-sm font-medium transition-all hover:shadow-lg" style="background-color:#2A5208;color:white;">반별 작품 갤러리 보기</button>
+    <button onclick="document.getElementById('flipbook-gallery').scrollIntoView({behavior:'smooth'})" class="py-3 px-6 rounded-2xl font-body text-sm font-medium transition-all hover:shadow-lg" style="background-color:#2A5208;color:white;">홍보 카탈로그 보기</button>
+  </div>
+</section>
+
+<!-- ③-A 지역 기념품 갤러리 -->
+<section id="souvenir-gallery" class="w-full px-4 py-12">
+  <div class="max-w-4xl mx-auto flex justify-center">
+    <div class="rounded-sm overflow-hidden" style="background:linear-gradient(135deg,#d4e2c8,#a8c690);display:flex;align-items:center;justify-content:center;width:100%;max-width:650px;aspect-ratio:4/3;">
+      <p class="font-body text-sm" style="color:#666;">시흥시 5대 권역 지도<br><span style="font-size:11px;color:#999;">이미지 교체: &lt;img&gt; 태그로 대체하세요</span></p>
+    </div>
+  </div>
+  <p class="font-body text-xs text-center mt-4" style="color:#999;">학생들은 시흥의 다양한 랜드마크를 직접 조사하여 작품 소재로 담았습니다.</p>
+</section>
+
+<section class="max-w-4xl mx-auto px-4 py-8">
+  <h2 class="font-display text-4xl text-center mb-4" style="color:#1a1a1a;">반별 작품 갤러리</h2>
+  <p class="font-body text-sm text-center" style="color:#666;">각 반의 학생들이 만든 작품을 감상하세요.</p>
+</section>
+
+<!-- 갤러리 탭: 반 선택 -->
+<section class="max-w-4xl mx-auto px-4 pb-8">
+  <div class="flex gap-2 justify-center flex-wrap" id="gallery-tabs">
+    <!-- 탭은 JS로 렌더링 -->
+  </div>
+</section>
+
+<section class="max-w-4xl mx-auto px-4 pb-20">
+  <div id="gallery-grid" class="flex flex-wrap gap-2 justify-center" style="align-content:flex-start;"></div>
+</section>
+
+<!-- 이미지 모달 -->
+<div id="imageModal" class="modal">
+  <div style="max-width:90vw;max-height:90vh;position:relative;">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <img id="modal-img" src="" alt="" style="max-width:90vw;max-height:85vh;object-fit:contain;border-radius:4px;display:block;">
+  </div>
+</div>
+
+<!-- ③-B 플립북 (홍보 카탈로그) -->
+<section id="flipbook-gallery" class="w-full px-4 py-12 border-t" style="border-color:#e0ddd6;">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="font-display text-4xl text-center mb-4" style="color:#1a1a1a;">우리가 만든 홍보 카탈로그</h2>
+    <p class="font-body text-sm text-center mb-2" style="color:#666;">팀별로 시흥을 브랜딩하고 직접 홍보 카탈로그를 제작했습니다.</p>
+    <p class="font-body text-xs text-center mb-10" style="color:#999;">반을 선택한 뒤 카탈로그 썸네일을 누르면 아래에서 바로 감상할 수 있어요.</p>
+
+    <!-- 플립북 탭 -->
+    <div class="flex gap-2 justify-center flex-wrap mb-10" id="flipbook-tabs"></div>
+
+    <!-- 팀 썸네일 그리드 -->
+    <div class="mb-4 text-center">
+      <div id="flipbook-grid" class="flex gap-4 justify-center flex-wrap" style="align-items:flex-start;"></div>
+    </div>
+    <div id="flipbook-info" class="font-body text-sm text-center mb-4" style="color:#2A5208;min-height:24px;"></div>
+
+    <!-- 뷰어 -->
+    <div id="flipbook-viewer-wrap" class="mb-20 rounded-sm overflow-hidden border" style="border-color:#d8d2c8;background:white;">
+      <div id="flipbook-empty" class="font-body text-sm text-center py-16" style="color:#999;">카탈로그 썸네일을 선택하면 이곳에서 바로 볼 수 있어요.</div>
+      <iframe id="flipbook-viewer" title="홍보 카탈로그 미리보기" src="" style="display:none;width:100%;height:72vh;min-height:560px;border:0;" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ④ 방명록 (Formspree 연동 — FORMSPREE_ID 교체 필요) -->
+<section id="guestbook" class="max-w-2xl mx-auto px-6 py-20 border-t" style="border-color:#e0ddd6;">
+  <div class="divider mx-auto mb-8" style="background-color:#2A5208;"></div>
+  <div class="mb-12">
+    <p class="font-body text-sm leading-relaxed text-center mb-2" style="color:#666;">자녀는 올해 미술 시간에 시흥의 랜드마크를 직접 조사하고, 레이어 기법으로 나만의 기념품을 만들었습니다.</p>
+    <p class="font-body text-sm leading-relaxed text-center" style="color:#666;">소중한 한 마디를 남겨주세요. 💚</p>
+  </div>
+
+  <!--
+    ★ Formspree 설정 방법 ★
+    1. https://formspree.io 접속 → 무료 가입
+    2. "New Form" 생성 → 이메일 입력
+    3. 생성된 form endpoint(예: https://formspree.io/f/xyzabcde)를 아래 action에 붙여넣기
+    4. 이메일로 응답 알림 수신 + 대시보드에서 전체 내역 확인 가능
+  -->
+  <form id="guestbook-form" action="https://formspree.io/f/FORMSPREE_ID" method="POST" class="space-y-6">
+    <div>
+      <label for="child-name" class="font-body text-sm block mb-2" style="color:#333;">자녀 이름 (학년·반)</label>
+      <input type="text" id="child-name" name="child_name" placeholder="예: 2-11반 홍○동" class="w-full p-3 rounded-sm border font-body text-sm" style="border-color:#ddd;background:white;color:#333;">
+    </div>
+    <div>
+      <label for="feedback1" class="font-body text-sm block mb-2" style="color:#333;">자녀의 작품을 보고 한 마디 남겨주세요.</label>
+      <p class="font-body text-xs mb-3" style="color:#999;">(선생님이 검토 후 자녀에게 전달됩니다)</p>
+      <textarea id="feedback1" name="feedback_to_child" placeholder="따뜻한 응원의 말씀을 부탁드립니다." rows="4" class="w-full p-3 rounded-sm border font-body text-sm" style="border-color:#ddd;background:white;color:#333;"></textarea>
+    </div>
+    <div>
+      <label for="feedback2" class="font-body text-sm block mb-2" style="color:#333;">작품을 보고 느낀 점이나 선생님께 전하고 싶은 말</label>
+      <p class="font-body text-xs mb-3" style="color:#999;">소중한 한 마디가 더 좋은 수업을 만드는 데 쓰입니다. 🙏</p>
+      <textarea id="feedback2" name="feedback_to_teacher" placeholder="자유롭게 남겨주세요." rows="4" class="w-full p-3 rounded-sm border font-body text-sm" style="border-color:#ddd;background:white;color:#333;"></textarea>
+    </div>
+    <!-- Formspree 스팸 방지 (건드리지 마세요) -->
+    <input type="text" name="_gotcha" style="display:none;">
+    <input type="hidden" name="_subject" value="[L.A.Y.E.R. 전시] 방명록 응답">
+    <button type="submit" class="w-full py-3 px-4 rounded-2xl font-body text-sm font-medium transition-all hover:shadow-lg" style="background-color:#2A5208;color:white;">제출하기</button>
+  </form>
+
+  <div id="success-message" class="hidden mt-6 p-4 rounded-sm text-center font-body text-sm" style="background-color:#f0f5ed;color:#2A5208;border:1px solid #d4e2c8;">
+    감사합니다! 소중한 의견이 전달되었습니다. 💚
+  </div>
+</section>
+
+<!-- ⑤ 푸터 -->
+<footer class="text-center py-16 px-6" style="background-color:#2A5208;">
+  <div class="divider mx-auto mb-6" style="background-color:rgba(255,255,255,0.4);"></div>
+  <p class="font-body text-sm leading-relaxed mb-4" style="color:rgba(255,255,255,0.85);">
+    배곧해솔중학교 미술과 × 배곤2청소년문화의집
+  </p>
+  <p class="font-body text-xs" style="color:rgba(255,255,255,0.55);">L.A.Y.E.R. 지역 브랜딩 프로젝트 2026</p>
+</footer>
+
+<script>
+// ══════════════════════════════════════════════
+//  갤러리 데이터
+//  student: 이름 (예: '2-11 홍○동')
+//  location: 지역/주제
+//  image: 이미지 URL (없으면 '' 빈 문자열)
+// ══════════════════════════════════════════════
+const artworkData = {
+  '11': Array.from({length:30},(_,i)=>({student:`2-11 학생${i+1}`,location:'시흥 지역',image:''})),
+  '12': Array.from({length:30},(_,i)=>({student:`2-12 학생${i+1}`,location:'시흥 지역',image:''})),
+  '13': Array.from({length:30},(_,i)=>({student:`2-13 학생${i+1}`,location:'시흥 지역',image:''})),
+  '14': Array.from({length:30},(_,i)=>({student:`2-14 학생${i+1}`,location:'시흥 지역',image:''})),
+};
+
+const gradients = [
+  'linear-gradient(135deg,#d4e2c8,#a8c690)',
+  'linear-gradient(135deg,#e8ddd0,#c9b896)',
+  'linear-gradient(135deg,#dde4ed,#a3b8d0)',
+  'linear-gradient(135deg,#f0e6d3,#d4c4a8)',
+  'linear-gradient(135deg,#e3d8e8,#b8a3c4)',
+  'linear-gradient(135deg,#d4e2c8,#c9b896)',
+  'linear-gradient(135deg,#dde4ed,#d4c4a8)',
+  'linear-gradient(135deg,#e8ddd0,#b8a3c4)',
+  'linear-gradient(135deg,#f0e6d3,#a8c690)',
+];
+
+const GALLERY_CLASSES = ['11','12','13','14'];
+let currentGalleryClass = '11';
+
+function buildGalleryTabs() {
+  const wrap = document.getElementById('gallery-tabs');
+  GALLERY_CLASSES.forEach(cls => {
+    const btn = document.createElement('button');
+    btn.className = 'tab-btn ' + (cls === currentGalleryClass ? 'active' : 'inactive');
+    btn.style.cssText = 'padding:8px 20px;border-radius:8px;font-family:"Noto Sans KR",sans-serif;font-size:14px;';
+    btn.textContent = cls + '반';
+    btn.onclick = () => switchGallery(btn, cls);
+    wrap.appendChild(btn);
+  });
+}
+
+function switchGallery(btn, cls) {
+  document.querySelectorAll('.tab-btn').forEach(b => { b.classList.remove('active'); b.classList.add('inactive'); });
+  btn.classList.remove('inactive'); btn.classList.add('active');
+  currentGalleryClass = cls;
+  renderGallery();
+}
+
+function renderGallery() {
+  const grid = document.getElementById('gallery-grid');
+  grid.innerHTML = '';
+  (artworkData[currentGalleryClass] || []).forEach((aw, i) => {
+    const item = document.createElement('div');
+    item.className = 'gallery-item';
+    item.style.cssText = 'display:flex;flex-direction:column;flex:1 1 calc(20% - 10px);min-width:110px;max-width:150px;animation-delay:'+(i*0.03)+'s;';
+
+    const imgBox = document.createElement('div');
+    imgBox.className = 'artwork-image';
+    imgBox.style.cssText = 'width:100%;aspect-ratio:2/3;border-radius:4px;overflow:hidden;position:relative;';
+
+    if (aw.image) {
+      const img = document.createElement('img');
+      img.src = aw.image; img.alt = aw.student;
+      img.style.cssText = 'width:100%;height:100%;object-fit:cover;display:block;';
+      imgBox.appendChild(img);
+      imgBox.onclick = () => openModal(aw.image);
+    } else {
+      imgBox.style.background = gradients[i % gradients.length];
+      imgBox.style.display = 'flex';
+      imgBox.style.alignItems = 'center';
+      imgBox.style.justifyContent = 'center';
+      const ph = document.createElement('p');
+      ph.style.cssText = 'font-size:10px;color:rgba(0,0,0,0.35);font-family:"Noto Sans KR",sans-serif;text-align:center;padding:4px 6px;line-height:1.5;margin:0;';
+      ph.innerHTML = '📷<br>이미지<br>준비중';
+      imgBox.appendChild(ph);
+    }
+
+    const name = document.createElement('p');
+    name.style.cssText = 'color:#333;margin-top:6px;margin-bottom:2px;font-size:11px;font-family:"Noto Sans KR",sans-serif;font-weight:300;';
+    name.textContent = aw.student;
+
+    const loc = document.createElement('p');
+    loc.style.cssText = 'color:#999;margin:0;font-size:11px;font-family:"Noto Sans KR",sans-serif;font-weight:300;';
+    loc.textContent = aw.location;
+
+    item.appendChild(imgBox); item.appendChild(name); item.appendChild(loc);
+    grid.appendChild(item);
+  });
+}
+
+function openModal(src) {
+  document.getElementById('modal-img').src = src;
+  document.getElementById('imageModal').classList.add('active');
+}
+function closeModal() {
+  document.getElementById('imageModal').classList.remove('active');
+  document.getElementById('modal-img').src = '';
+}
+document.getElementById('imageModal').addEventListener('click', e => { if(e.target===document.getElementById('imageModal')) closeModal(); });
+
+// ══════════════════════════════════════════════
+//  플립북 데이터 (엑셀에서 업데이트됨)
+// ══════════════════════════════════════════════
+const flipbookData = {
+  '11': [
+    { team: '1조 맛깔나는 퀴-즈쑈!', members: '권규리 유도윤 심승우 최수영 최은채', link: '#', thumbnail: 'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_448%2Cw_798&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F5683ed27aaf7d848d1b6c32eedd74b97%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_R4B4lAIxkGzfVghmREp13WSorYW3Pvyn0gET0npHHH_U6hoJjGQzNRDrvbV-XFW2oYZ2-JuKEpCBH-HTHY3JSr_-JBry-ed0AerY93xkBeaQ%3D%3D' },
+    { team: '2조 시흥의 관광품', members: '김고은 김연우 김지태 정희진 허재', link: '#', thumbnail: 'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_447%2Cw_796&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F3646cfe100d03b7da1b40fc7b89ad607%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_SscOYEIqKFyBAb1e3z2YDC-hcHpxr7PqHoyPDrZ2S8wzXALivMj0d_dBwK2T65i5e3Gwa4UU4h5aYSZvb8SrsV-MB_zALXJUGEWbANtLpO7w%3D%3D' },
+    { team: '3조 프롬폰트 환경 작품', members: '권민아 김동열 박병준 주원 최지원', link: '#', thumbnail: 'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_446%2Cw_793&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fdd9a7036f3b78f816b2b4e00300d8a37%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_T9P6UrVec-idHpYdDSwCJT_Vzd_HMfKQtUj9cySl3AFMdY4zMLM5y3Xwd1QQgq4D2FwwSmP-mihbKmZcwnfbe6oNAiczU78DsFryuYH3TRUA%3D%3D' },
+    { team: '4조 시흥시의 물의 아름다움', members: '김시현 선민솔 장서율 윤태양 최지훈', link: '#', thumbnail: 'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_446%2Cw_791&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F5f02da175f93d043199119b0bf21946e%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_SSpuKl2A8ox6u3aPNPkZ3FeslSGKMQFmLfEDOiC-XetNFLCIaNIQ8Z8DCvTjei3LvT7t6BrxD1KvEzTxUdbU2UuQzku6fVq-GpuL00SHQKaQ%3D%3D' },
+    { team: '5조 토킹톰 플로깅런', members: '김다은 방예준 한상현 한신 황진', link: '#', thumbnail: 'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_447%2Cw_795&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fbfe0f4bf293d014b5e5606ff73b05dd1%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_SAK59KGDu9xCqbLJiJ3TVck5_pLAmvVMS1IKaqvyxPZgP6gf4RLlBrCm8LPonSRzIojF3aEtFOaXzmC9zdCofrB63PLl8AvCOla-jqnnf1qw%3D%3D' },
+    { team: '6조 시흥의 자연 명소 기념품', members: '문서희 박다은 이지우 이채민 홍성윤', link: '#', thumbnail: 'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_445%2Cw_797&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F1c207131f844df7e74b59cbc4ecfca4a%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_Qh6PmIuW0KbYMWwKWjG-aULKdT7HLbNFElAFUvffBjnSdk93X7yh4FXDPSzg1ADBIKlWDzg20PeKAlObIE8t4T9XPdW2OTBkHsAo3RqVniLQ%3D%3D' },
+  ],
+  '12': [
+    { team: '1조 시흥 배곧 카탈로그', members: '기태훈 김하늘 서혜림 임주원 정승환', link: '#', thumbnail: 'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_598%2Cw_1064&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Ffba156d871cd067c145548a2797e335e%2F12__1_.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_SSZXFEd8MM8jGgmxdlHFJVoErx4vR0GmKGRuvgsQK2THRVIpYD6ouqqsuzXrHjPO8xtLZG0eJ67tbO4WNPNkhhxMgbRFW2UnAJJaX-pvujBg%3D%3D' },
+    { team: '2조 시흥 관광지', members: '김예성 김지안 박정후 이예진 박경원', link: '#', thumbnail: 'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_598%2Cw_1064&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F9893ae98c5ef1635707bef4a62586c1f%2F______.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_RreO9U0jCjOUlr5PO6HbHG5XPvZjDI9fRGzIWs7VjU_-lg761ikFX2ymMB86ic6zNO2UTT8UuxnP-gVg6LRGpmXlz5y3mW-2X5A8L6rJYt5Q%3D%3D' },
+    { team: '3조 SHTT', members: '구아라 박하엘 어용준 엄성호', link: '#', thumbnail: 'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_598%2Cw_1064&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F2b88c9f99670c79a0bca9676bdfd0cf7%2F_____________________________.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_QMZT-ANScWtVTPvFROHx_xJWEF6269ZzJTV1JylDUBmJoIkYhqW2VttnPz0WD5QLkqHqbSfibcoOvuZGzIglkCxg_vVwUmjvnJS5sxlZL8esB0kJV8zeR4HmS5U1fQUW6SOGFzHasypvvi_SFw0EZ_' },
+    { team: '4조 같은 하늘 아래 다양한 시흥의 모습들', members: '권주아 김민재 배준혁 이연희 최은우', link: '#', thumbnail: 'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_598%2Cw_1064&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fe0ddd92ccf0cdfb029173931b0f1d1a8%2F12_4.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_QO6rVNnh2zhxjhfoFVjRYk81HCGyxlg3_0eSq6eLNx51OuF4_aJ8sVrpaQL-i6vq6XuaGboEM9xjL8F9vHYgRR-QghJDWlW_2_7xwH6YPGOw%3D%3D' },
+    { team: '5조 Welcome to 시흥퀴즈쇼', members: '김진우 김혜림 신민주 이은서', link: '#', thumbnail: 'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_598%2Cw_1064&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fdf722b9652783ab6175e8a79b7cee7cc%2F12_5.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_Sj4-VAQdu8HKL9XfaW3Ao1X5fDs0sGB1V-Gys0XJwXvInohA89WxTYslm9qz50nqPWcarfp1_zvNb4gdXcMeDtPnqBf1Qb5NBPSnONS6en-A%3D%3D' },
+    { team: '6조 시흥의 공원 탐방 게임', members: '송준우 신민결 임현율 조현아 채영린', link: '#', thumbnail: 'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_450%2Cw_797&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fcda7ab99cdc7d97b36d65d5cdd409e66%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_QwMw2LW5ft7eueYw6gYMGZfpGSjG7r-9lEEQCPRHSZiZ6YNTshZfP2Vz0j5ttB2iKu6C6cbSHfAHSfi86flpwv6MzDfeOuJ1pWz2DpXtzFQA%3D%3D' },
+  ],
+  '13': [
+    { team: '1조 물멍 시흥', members: '김세은 김태희 문희건 신지우 이', link: 'https://www.canva.com/design/DAHJbmCSiFg/XSxUh4H-w5jfD_CtaarPqw/view?embed', thumbnail: 'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_443%2Cw_795&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fde316a80d49848117f8ca1c2daaf0792%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_SSxMBKNtr_LoW-i2Djh6FVj5O83CSnWfWX0YgyeY-SbGAHhcqF9iZB-XVcXf3invy5wx96pxV0VZhERboOK_QOSYELahcLn0PaDcHwT8vAWQ%3D%3D' },
+    { team: '2조 완벽한 시흥 여행 플래너', members: '김가윤 김지환 노혜린 신진 최민서', link: 'https://www.canva.com/design/DAHJbm11sxM/gHeO07oFEPBugSGCZuX1vg/view?embed', thumbnail: 'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_447%2Cw_792&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F6be480d4530011bbe5aa99378f56a268%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_QOP5zh2nBL6gLaXkBcPfX0b5_7Xc04SA0U0iZtz380iS0bJlnaPQfkhUSKIHUFsJMhBz_hDv9DYbehZ_rLtMTVfOnxQw8En5dtyPT_AL-P7A%3D%3D' },
+    { team: '3조 자연과 공존하는 도시 시흥', members: '김가원 김영민 성하은 이도환 지우빈', link: 'https://www.canva.com/design/DAHJbs4MDaQ/rLnoeGWzisrVT64Z_v1JGg/view?embed', thumbnail: 'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_443%2Cw_792&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fcb022d9c449b5ceab60dbfba7ded26b6%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_Sug7195lQQcACWazrwJdMHGJtplpMS6JPp-PiOvZrKLl9P6SRlR70rXFn29tudAcsO-xALQZQ2N8ZjgT8a95RUSX3q5d160jatHs29OPFVuw%3D%3D' },
+    { team: '4조 Wave your life', members: '권오성 이도빈 조은준 최시원 테눙', link: 'https://www.canva.com/design/DAHJbvlG5Zo/AjqAe8iJbOZnlyKLRbAWfw/view?embed', thumbnail: 'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_447%2Cw_792&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F1ecbe42badbb61f60991fe237609ba23%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_SHAjg8Trut8POB_X6Nue8qYFlAj5f577tI97f4iJ_bg2dcmm3NBD3gIg7AsdOfVm35GKiYajYXFsiivBxown_U7pI_Eggr1qtrHrcWzBXUdQ%3D%3D' },
+    { team: '5조 SH 마켓', members: '김민준 손서연 안서윤 정준희 한종빈', link: 'https://www.canva.com/design/DAHJbi-y16Q/iupXTTwvefApNjryQQarOg/view?embed', thumbnail: 'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_448%2Cw_796&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F8eb52b7c0d1b91c84b19de5ad5ae9ae2%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_QNPVBYfsVo9JRUzGdmKTCPepEKWIOgMil2BkFULQdoAPL3FeFQ3mH_OhjCOXFK2p44KmAEooTBK33WT1snu5neReN93N31EglRTDpcgKsRiA%3D%3D' },
+    { team: '6조 작은 풍경 조각', members: '김예담 김주연 노유정 한혜주', link: '#', thumbnail: 'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_317%2Cw_566&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F34f5c3f983d2268fd9f44b33ab1e6a9c%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_QKLN5k7Qu1-5yhB7ffDSskywGSqmstJXBpymD5q20-Fh76sIkIZOVNFlkKyGaU-4b60nldJqztYzwjiZ_AaorRpjo75Xh5RbB-vRJxBoYY9Q%3D%3D' },
+  ],
+  '14': [
+    { team: '1조 펀딩 발표', members: '강서연 방소은 신율희 전재용 정현우', link: '#', thumbnail: 'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_428%2Cw_763&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fc717576178db0e71a277f95d5f91c133%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_S8TudvfNGXMTzKwf2SLlV14zKKLHeEL72DIl4OH3JRxfPjQTS5e4c6BIH1HqZoSH6KRhlZevcA3bhKiAHmPC7RCSQk6VuJslaCAvCX75dWZg%3D%3D' },
+    { team: '2조 시흥 굿즈', members: '김지율 서현지 안소율 이재강 이진욱', link: 'https://www.canva.com/design/DAHJC0V6IUk/k_gvkeBiuRX1F34-zWyKBg/view?embed', thumbnail: 'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_403%2Cw_712&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Ff3a8e48cb93ded62d5d174e0599e85db%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_SRvP46Xy9PpW4WZ28XAxgV4Xqstzy2KVrMiHRPQExEtoZ7rh76-L3EHHVVddN1qwNdzvMvWkSLFU5cGWBdG6ROWUJ23Vuac2IZFiF8Dz7b9g%3D%3D' },
+    { team: '3조 해로토로를 찾아서', members: '김미연 박서원 박시우 이은수 정주원', link: 'https://www.canva.com/design/DAHJC0V6IUk/k_gvkeBiuRX1F34-zWyKBg/view?embed', thumbnail: 'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_407%2Cw_717&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fec6cfe88bc77de16f94b95ca67c46c61%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_R5Ilv1Dl6HAaPSNqjhZCzyLQQuDAqV5fnvtRs3DHO-imHfIgwizEnKE2tdPUaMguO6mSmw5bFsT0MuiPAwC7EEEvyXgnyih_aX2j76_JFS9A%3D%3D' },
+    { team: '4조 버킷리스트', members: '금찬혁 김동진 신해리 오아린 이재욱', link: 'https://www.canva.com/design/DAHJC5XCGYw/9yP981_lzTuBEhmGTwagng/view?embed', thumbnail: 'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_402%2Cw_715&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fedc2fd5180fe5ae4562c028bda47f6df%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_QM_iY9gBOnv3llAgD-wbChmwr4KP1NKvdp923fW4W7_VtX6WTFb3eAJZ_yJtgZ4wf2mQDNrpvMaiuiUiJh1olpD_brDJ6y3WJjMbWPOQDbyA%3D%3D' },
+    { team: '5조 Siheung Travel', members: '손지성 이도희 조서현 이찬희 최은채', link: '#', thumbnail: 'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_478%2Cw_845&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fd8ff3344bc72c01d999b651d18b54810%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_SNLQRxHiRQqqRTfqaqO13h39KwF0ETV6lAHJiv0lL2ES0W9ZADWKGKte1ysoN-TAL-OCeOxkiNooyy_XqetVCV8XUZPBxkiBb1wS2JFwiO-w%3D%3D' },
+    { team: '6조 시흥시 완벽하게 즐기', members: '박시완 윤문 윤성현 이승연 차민서 한예준', link: 'https://www.canva.com/design/DAHJCiYA_GQ/sLN1fpFIhhyLGmxjq9m7cA/view?embed', thumbnail: 'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_403%2Cw_722&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fbcaf42af4c477929c08b47caddc252c1%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_R7VOJjg_WKxWQAsQaEvBlmO_ADkxvrARdqKntH7I96_66_A7GsougIhFtgRkA9wH_zdFeej9xpZHPT8SFBenXSaPJvezmgB02K58vBzRGJ0w%3D%3D' },
+  ],
+};
+
+const FB_CLASSES = ['11','12','13','14'];
+let currentFBClass = '11';
+const fbThumbGradients = [
+  'linear-gradient(135deg,#d4e2c8,#a8c690)',
+  'linear-gradient(135deg,#e8ddd0,#c9b896)',
+  'linear-gradient(135deg,#dde4ed,#a3b8d0)',
+  'linear-gradient(135deg,#f0e6d3,#d4c4a8)',
+  'linear-gradient(135deg,#e3d8e8,#b8a3c4)',
+  'linear-gradient(135deg,#d8e8e0,#a0c8b4)',
+];
+
+function buildFlipbookTabs() {
+  const wrap = document.getElementById('flipbook-tabs');
+  FB_CLASSES.forEach(cls => {
+    const btn = document.createElement('button');
+    btn.className = 'tab-btn-fb ' + (cls === currentFBClass ? 'active' : 'inactive');
+    btn.style.cssText = 'padding:8px 20px;border-radius:8px;font-family:"Noto Sans KR",sans-serif;font-size:14px;';
+    btn.textContent = cls + '반';
+    btn.onclick = () => switchFB(btn, cls);
+    wrap.appendChild(btn);
+  });
+}
+
+function switchFB(btn, cls) {
+  document.querySelectorAll('.tab-btn-fb').forEach(b => { b.classList.remove('active'); b.classList.add('inactive'); });
+  btn.classList.remove('inactive'); btn.classList.add('active');
+  currentFBClass = cls;
+  renderFlipbook();
+}
+
+function selectFlipbook(fb, idx, scroll) {
+  const viewer = document.getElementById('flipbook-viewer');
+  const empty = document.getElementById('flipbook-empty');
+  const info = document.getElementById('flipbook-info');
+
+  document.querySelectorAll('.fb-card').forEach((c, i) => {
+    const th = c.querySelector('.fb-thumb');
+    if (th) {
+      th.style.borderColor = i === idx ? '#2A5208' : 'transparent';
+      th.style.boxShadow = i === idx ? '0 0 0 2px #2A5208' : 'none';
+    }
+  });
+
+  info.textContent = currentFBClass + '반 ' + fb.team + (fb.members ? ' · ' + fb.members : '');
+
+  if (!fb.link || fb.link === '#') {
+    viewer.style.display = 'none'; viewer.src = '';
+    empty.style.display = 'block';
+    empty.textContent = fb.team + ' 카탈로그는 아직 링크가 등록되지 않았습니다.';
+    return;
+  }
+  empty.style.display = 'none';
+  viewer.style.display = 'block';
+  viewer.src = fb.link;
+  if (scroll) document.getElementById('flipbook-viewer-wrap').scrollIntoView({behavior:'smooth',block:'center'});
+}
+
+function renderFlipbook() {
+  const grid = document.getElementById('flipbook-grid');
+  grid.innerHTML = '';
+  const list = flipbookData[currentFBClass] || [];
+
+  list.forEach((fb, i) => {
+    const card = document.createElement('div');
+    card.className = 'fb-card';
+    card.style.cssText = 'cursor:pointer;width:110px;display:flex;flex-direction:column;align-items:center;gap:6px;transition:transform 0.2s;';
+    card.onmouseenter = () => card.style.transform = 'translateY(-3px)';
+    card.onmouseleave = () => card.style.transform = 'translateY(0)';
+
+    const hasLink = fb.link && fb.link !== '#';
+    const hasThumb = fb.thumbnail && fb.thumbnail.trim() !== '';
+
+    const thumb = document.createElement('div');
+    thumb.className = 'fb-thumb';
+    thumb.style.cssText = 'width:100%;aspect-ratio:4/3;border-radius:6px;overflow:hidden;border:2px solid transparent;transition:border-color 0.2s,box-shadow 0.2s;position:relative;';
+
+    if (hasThumb) {
+      const img = document.createElement('img');
+      img.src = fb.thumbnail; img.alt = fb.team;
+      img.style.cssText = 'width:100%;height:100%;object-fit:cover;display:block;';
+      thumb.appendChild(img);
+    } else {
+      thumb.style.background = fbThumbGradients[i % fbThumbGradients.length];
+      thumb.style.display = 'flex'; thumb.style.alignItems = 'center'; thumb.style.justifyContent = 'center';
+    }
+
+    if (!hasLink) card.style.opacity = '0.6';
+
+    const lbl = document.createElement('p');
+    lbl.style.cssText = 'font-size:11px;color:#555;text-align:center;font-family:"Noto Sans KR",sans-serif;line-height:1.3;margin:0;word-break:keep-all;';
+    lbl.title = fb.team;
+    lbl.textContent = fb.team.length > 10 ? fb.team.slice(0, 10) + '…' : fb.team;
+
+    card.appendChild(thumb); card.appendChild(lbl);
+    card.onclick = () => selectFlipbook(fb, i, true);
+    grid.appendChild(card);
+  });
+
+  const firstOk = list.findIndex(f => f.link && f.link !== '#');
+  selectFlipbook(list[firstOk >= 0 ? firstOk : 0], firstOk >= 0 ? firstOk : 0, false);
+}
+
+// Formspree 방명록 처리
+document.getElementById('guestbook-form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const btn = document.querySelector('#guestbook-form button[type="submit"]');
+  btn.disabled = true; btn.textContent = '전송 중...';
+  try {
+    const res = await fetch(this.action, {
+      method: 'POST',
+      body: new FormData(this),
+      headers: { 'Accept': 'application/json' }
+    });
+    if (res.ok) {
+      this.classList.add('hidden');
+      document.getElementById('success-message').classList.remove('hidden');
+    } else {
+      alert('전송 중 오류가 발생했습니다. 잠시 후 다시 시도해주세요.');
+      btn.disabled = false; btn.textContent = '제출하기';
+    }
+  } catch {
+    alert('네트워크 오류가 발생했습니다.');
+    btn.disabled = false; btn.textContent = '제출하기';
+  }
+});
+
+// 초기화
+buildGalleryTabs();
+renderGallery();
+buildFlipbookTabs();
+renderFlipbook();
+</script>
+</body>
+</html>

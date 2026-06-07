@@ -939,9 +939,11 @@ function filterGallery(query) {
   const q = query.trim();
   const items = document.querySelectorAll('#gallery-grid .gallery-item');
   items.forEach(item => {
-    const nameEl = item.querySelector('p');
-    const text = nameEl ? nameEl.textContent : '';
-    item.style.display = (!q || text.includes(q)) ? 'flex' : 'none';
+    const ps = item.querySelectorAll('p');
+    const fullText = ps[0] ? ps[0].textContent : '';
+    const namePart = fullText.includes(' ') ? fullText.split(' ').slice(1).join(' ') : fullText;
+    const match = !q || fullText.includes(q) || namePart.includes(q);
+    item.style.display = match ? 'flex' : 'none';
   });
 }
 

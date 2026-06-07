@@ -110,8 +110,8 @@
 <!-- ③-A 지역 기념품 갤러리 -->
 <section id="souvenir-gallery" class="w-full px-4 py-12">
   <div class="max-w-4xl mx-auto flex justify-center">
-    <div class="rounded-sm overflow-hidden" style="width:100%;max-width:480px;">
-      <img src="map.png" alt="시흥시 5대 권역 지도" style="width:100%;height:auto;display:block;">
+    <div class="rounded-sm overflow-hidden" style="width:100%;max-width:480px;cursor:pointer;" onclick="openModal('map.png')" title="클릭하면 크게 볼 수 있어요">
+      <img src="map.png" alt="시흥시 5대 권역 지도" style="width:100%;height:auto;display:block;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
     </div>
   </div>
   <p class="font-body text-xs text-center mt-4" style="color:#999;">학생들은 시흥의 다양한 랜드마크를 직접 조사하여 작품 소재로 담았습니다.</p>
@@ -135,9 +135,9 @@
 
 <!-- 이미지 모달 -->
 <div id="imageModal" class="modal">
-  <div style="max-width:90vw;max-height:90vh;position:relative;">
+  <div style="max-width:92vw;max-height:92vh;position:relative;">
     <button class="modal-close" onclick="closeModal()">✕</button>
-    <img id="modal-img" src="" alt="" style="max-width:90vw;max-height:85vh;object-fit:contain;border-radius:4px;display:block;">
+    <img id="modal-img" src="" alt="" style="max-width:92vw;max-height:88vh;object-fit:contain;border-radius:4px;display:block;">
   </div>
 </div>
 
@@ -672,7 +672,11 @@ const artworkData = {
 
 const flipbookData = {
   '1': [
-    {team:'준비중', members:'', link:'#', thumbnail:''},
+    {team:'1조 Slowly', members:'김다민 김서후 이도현 이정환 정하균', link:'https://www.canva.com/design/DAHKQJqNvwg/BI-y1c1p_wP2ThTLpEi3NA/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_783%2Cw_1400&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Ff69900e6ead9c78c75f9974984c05e7c%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_TCjmlFaK94Elxagb_W-8uPkq2ABztguq1x5y2415jI-4YZOvA21KZ2JPMRKx8JiSOw6OmPoAwhYd3jGeddtjMbsBnKJ6QmgOozcCj5JzkzrA%3D%3D'},
+    {team:'2조 뽀롱뽀롱 시흥시', members:'남하은 박지우 신여진 최강우', link:'https://drive.google.com/file/d/1f4tntOvfZmZsoG0_uF6qFhgJiNAC7fYc/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_512%2Cw_912&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F07748f7225fdac21d3c8cd80b89f4d82%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_QObnsp2ZRKk0hcjhh0IWIVwy63impNxMqUg6buYMMBP_v5fzQRXL204jKWuWAX0J2Sb4TsQgrxTM4qZ37H6oQOLXcO_3A8OkW0GYEmI1ozpQ%3D%3D'},
+    {team:'3조 AMIR', members:'박성연 박준수 이가람 정주하', link:'https://www.canva.com/design/DAHI8Pl_Pcc/30SX3i2qeXl9emd1ZyL9aQ/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_787%2Cw_1400&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F2a5862a937e83dbab9f5167a4ceded58%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_QofV0WaRUhYY5voLE93_X6gFhaVcwosJ-mvBh5SIkigY0bJbEaCz4vpbKh3iYUe3tYMY_iVpBVJdmEx1tnIKInq2ui1MQoN2SOTrk4lJdjuQ%3D%3D'},
+    {team:'5조 풍경을 담다', members:'김도훈 김무열 김윤도 김주은 최재원', link:'https://www.canva.com/design/DAHKQFSVxgM/Jpu4bumlPZgvdBOyKv-Jbw/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_917%2Cw_896&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Ff801f8290bec532caad773c7a45cbf6b%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_RXEnUXEJtZn9-wu97aOwBUS3Vg3ASK0A1jk_a8vMvi8A5ILw651eIPPNF_Mamvxk3KZYJbLgxxiQ0qUA9fr3t7Kyt1Z7aqAwqy5I9uGDUaCQ%3D%3D'},
+    {team:'6조 바다 한 조각 스튜디오', members:'심찬율 염인혁 장소윤 진채원 허승준', link:'https://drive.google.com/file/d/1Pr5fA45ALyDUOkzG55k3rytGUDsKZqBS/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_508%2Cw_912&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F009028108add238a727196805a7ee373%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_TOhjoyWjkwaGMzYhLC4gZYXH-1rwgrSITjK1iRFG7f6YLNVuetWt1ym_BJUncW93XUzGBGjKciyzSufel9dkLgAUMcyRZk8IgBme_nbRcu5Q%3D%3D'},
   ],
   '2': [
     {team:'1조 시흥 한바퀴', members:'강태양 김동건 박지은 이유리 최승완', link:'https://drive.google.com/file/d/1XtjcNSfqmNfZetHrty5nOsmN3QaGmvPV/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_555%2Cw_983&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fb0ab73dab625938e176bc580e424974d%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_Sr1x2EotWxcm31eUth00aN7bBs49AFUUfOECi36_YrMuSnuGUlVFZxa3VjVeyjZU1bnMN8IftieauNeTC9uU95x07X2HW04jqmX4VHuOH5lw%3D%3D'},

@@ -57,7 +57,7 @@
   <div class="space-y-12">
     <div class="flex gap-6 items-start">
       <div class="flex-shrink-0 pt-1"><p class="font-display text-4xl font-bold" style="color: #2A5208;">L</p></div>
-      <div class="flex-shrink-0"><div class="rounded-sm" style="<img src="L.jpg" alt="L단계" style="width:120px;height:90px;object-fit:cover;border-radius:2px;display:block;"></div></div>
+      <div class="flex-shrink-0"><div class="rounded-sm" style="overflow:hidden;width:120px;height:90px;"><img src="L.jpg" alt="L단계" style="width:100%;height:100%;object-fit:cover;display:block;"></div></div>
       <div class="flex-1">
         <p class="font-display text-lg" style="color: #1a1a1a;">시흥을 눈에 담다</p>
         <p class="font-body text-sm mt-1" style="color: #666;">시흥의 랜드마크와 자연을 탐구하고 마인드맵으로 정리했어요</p>
@@ -65,7 +65,7 @@
     </div>
     <div class="flex gap-6 items-start">
       <div class="flex-shrink-0 pt-1"><p class="font-display text-4xl font-bold" style="color: #2A5208;">A</p></div>
-      <div class="flex-shrink-0"><div class="rounded-sm" style="<img src="A.jpg" alt="A단계" style="width:120px;height:90px;object-fit:cover;border-radius:2px;display:block;"></div></div>
+      <div class="flex-shrink-0"><div class="rounded-sm" style="overflow:hidden;width:120px;height:90px;"><img src="A.jpg" alt="A단계" style="width:100%;height:100%;object-fit:cover;display:block;"></div></div>
       <div class="flex-1">
         <p class="font-display text-lg" style="color: #1a1a1a;">이야기를 찾다</p>
         <p class="font-body text-sm mt-1" style="color: #666;">내가 담고 싶은 시흥의 이야기를 스스로 선택하고 이유를 썼어요</p>
@@ -73,7 +73,7 @@
     </div>
     <div class="flex gap-6 items-start">
       <div class="flex-shrink-0 pt-1"><p class="font-display text-4xl font-bold" style="color: #2A5208;">Y</p></div>
-      <div class="flex-shrink-0"><div class="rounded-sm" style="<img src="Y.jpg" alt="Y단계" style="width:120px;height:90px;object-fit:cover;border-radius:2px;display:block;"></div></div>
+      <div class="flex-shrink-0"><div class="rounded-sm" style="overflow:hidden;width:120px;height:90px;"><img src="Y.jpg" alt="Y단계" style="width:100%;height:100%;object-fit:cover;display:block;"></div></div>
       <div class="flex-1">
         <p class="font-display text-lg" style="color: #1a1a1a;">시흥과 연결하다</p>
         <p class="font-body text-sm mt-1" style="color: #666;">나의 경험과 시흥을 연결하여 레이어 구성을 스케치했어요</p>
@@ -81,7 +81,7 @@
     </div>
     <div class="flex gap-6 items-start">
       <div class="flex-shrink-0 pt-1"><p class="font-display text-4xl font-bold" style="color: #2A5208;">E</p></div>
-      <div class="flex-shrink-0"><div class="rounded-sm" style="<img src="E.jpg" alt="E단계" style="width:120px;height:90px;object-fit:cover;border-radius:2px;display:block;"></div></div>
+      <div class="flex-shrink-0"><div class="rounded-sm" style="overflow:hidden;width:120px;height:90px;"><img src="E.jpg" alt="E단계" style="width:100%;height:100%;object-fit:cover;display:block;"></div></div>
       <div class="flex-1">
         <p class="font-display text-lg" style="color: #1a1a1a;">손으로 만들다</p>
         <p class="font-body text-sm mt-1" style="color: #666;">디지털 작화와 슈링클스 기법으로 입체 기념품을 완성했어요</p>
@@ -89,7 +89,7 @@
     </div>
     <div class="flex gap-6 items-start">
       <div class="flex-shrink-0 pt-1"><p class="font-display text-4xl font-bold" style="color: #2A5208;">R</p></div>
-      <div class="flex-shrink-0"><div class="rounded-sm" style="<img src="R.jpg" alt="R단계" style="width:120px;height:90px;object-fit:cover;border-radius:2px;display:block;"></div></div>
+      <div class="flex-shrink-0"><div class="rounded-sm" style="overflow:hidden;width:120px;height:90px;"><img src="R.jpg" alt="R단계" style="width:100%;height:100%;object-fit:cover;display:block;"></div></div>
       <div class="flex-1">
         <p class="font-display text-lg" style="color: #1a1a1a;">함께 나누다</p>
         <p class="font-body text-sm mt-1" style="color: #666;">발표와 전시로 시흥의 이야기를 세상에 내놓았어요</p>
@@ -110,8 +110,8 @@
 <!-- ③-A 지역 기념품 갤러리 -->
 <section id="souvenir-gallery" class="w-full px-4 py-12">
   <div class="max-w-4xl mx-auto flex justify-center">
-    <div class="rounded-sm overflow-hidden" style="background:linear-gradient(135deg,#d4e2c8,#a8c690);display:flex;align-items:center;justify-content:center;width:100%;max-width:650px;aspect-ratio:4/3;">
-      <img src="map.png" alt="시흥시 5대 권역 지도" style="width:100%;height:100%;object-fit:contain;display:block;">
+    <div class="rounded-sm overflow-hidden" style="width:100%;max-width:480px;">
+      <img src="map.png" alt="시흥시 5대 권역 지도" style="width:100%;height:auto;display:block;">
     </div>
   </div>
   <p class="font-body text-xs text-center mt-4" style="color:#999;">학생들은 시흥의 다양한 랜드마크를 직접 조사하여 작품 소재로 담았습니다.</p>
@@ -790,14 +790,23 @@ const fbThumbGradients = [
 
 function buildGalleryTabs() {
   const wrap = document.getElementById('gallery-tabs');
-  GALLERY_CLASSES.forEach(cls => {
+  wrap.style.cssText = 'display:flex;flex-direction:column;gap:8px;align-items:center;';
+  const row1 = document.createElement('div');
+  row1.style.cssText = 'display:flex;gap:6px;width:100%;max-width:700px;';
+  const row2 = document.createElement('div');
+  row2.style.cssText = 'display:flex;gap:6px;width:100%;max-width:700px;';
+
+  GALLERY_CLASSES.forEach((cls, i) => {
     const btn = document.createElement('button');
     btn.className = 'tab-btn ' + (cls === currentGalleryClass ? 'active' : 'inactive');
-    btn.style.cssText = 'padding:8px 20px;border-radius:8px;font-family:"Noto Sans KR",sans-serif;font-size:14px;';
+    btn.style.cssText = 'flex:1;padding:8px 0;border-radius:8px;font-family:"Noto Sans KR",sans-serif;font-size:14px;';
     btn.textContent = cls + '반';
     btn.onclick = () => switchGallery(btn, cls);
-    wrap.appendChild(btn);
+    if (i < 7) row1.appendChild(btn);
+    else row2.appendChild(btn);
   });
+  wrap.appendChild(row1);
+  wrap.appendChild(row2);
 }
 
 function switchGallery(btn, cls) {
@@ -871,14 +880,23 @@ document.getElementById('imageModal').addEventListener('click', e => {
 
 function buildFlipbookTabs() {
   const wrap = document.getElementById('flipbook-tabs');
-  FB_CLASSES.forEach(cls => {
+  wrap.style.cssText = 'display:flex;flex-direction:column;gap:8px;align-items:center;';
+  const row1 = document.createElement('div');
+  row1.style.cssText = 'display:flex;gap:6px;width:100%;max-width:700px;';
+  const row2 = document.createElement('div');
+  row2.style.cssText = 'display:flex;gap:6px;width:100%;max-width:700px;';
+
+  FB_CLASSES.forEach((cls, i) => {
     const btn = document.createElement('button');
     btn.className = 'tab-btn-fb ' + (cls === currentFBClass ? 'active' : 'inactive');
-    btn.style.cssText = 'padding:8px 20px;border-radius:8px;font-family:"Noto Sans KR",sans-serif;font-size:14px;';
+    btn.style.cssText = 'flex:1;padding:8px 0;border-radius:8px;font-family:"Noto Sans KR",sans-serif;font-size:14px;';
     btn.textContent = cls + '반';
     btn.onclick = () => switchFB(btn, cls);
-    wrap.appendChild(btn);
+    if (i < 7) row1.appendChild(btn);
+    else row2.appendChild(btn);
   });
+  wrap.appendChild(row1);
+  wrap.appendChild(row2);
 }
 
 function switchFB(btn, cls) {

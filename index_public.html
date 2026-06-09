@@ -1,0 +1,1091 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>작은 조각에 담긴 시흥 : L.A.Y.E.R. 지역 브랜딩 프로젝트 展</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    html, body { height: 100%; margin: 0; }
+    .font-display { font-family: 'Playfair Display', serif; }
+    .font-body { font-family: 'Noto Sans KR', sans-serif; font-weight: 400; }
+    .divider { width: 40px; height: 1px; }
+    .gallery-item { opacity: 0; transform: translateY(20px); animation: fadeUp 0.6s ease forwards; }
+    @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
+    .tab-btn { transition: all 0.3s ease; text-align: center; flex-shrink: 0; }
+    .tab-btn.active { background-color: #2A5208; color: white; border: 2px solid #2A5208; }
+    .tab-btn.inactive { background-color: transparent; color: #2A5208; border: 2px solid #2A5208; }
+    .tab-btn-fb { transition: all 0.3s ease; text-align: center; flex-shrink: 0; }
+    .tab-btn-fb.active { background-color: #2A5208; color: white; border: 2px solid #2A5208; }
+    .tab-btn-fb.inactive { background-color: transparent; color: #2A5208; border: 2px solid #2A5208; }
+    .artwork-image { cursor: pointer; transition: transform 0.3s ease; }
+    .artwork-image:hover { transform: scale(1.05); }
+    .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 1000; align-items: center; justify-content: center; }
+    .modal.active { display: flex; }
+    .modal-close { position: absolute; top: 16px; right: 16px; background: white; border: none; width: 36px; height: 36px; border-radius: 50%; cursor: pointer; font-size: 18px; display: flex; align-items: center; justify-content: center; }
+  </style>
+</head>
+<body style="background-color: #F8F6F1;">
+
+<!-- ① INTRO -->
+<header class="w-full flex flex-col items-center justify-between px-6 py-12 relative" style="min-height: 100vh;">
+  <div class="pt-8">
+    <p class="font-body text-xs tracking-widest uppercase" style="color: #2A5208; letter-spacing: 0.15em;">L.A.Y.E.R. 지역 브랜딩 프로젝트 展 / 2026</p>
+  </div>
+  <div class="text-center flex-1 flex flex-col items-center justify-center">
+    <h1 class="font-display text-5xl md:text-7xl mb-6" style="color: #1a1a1a; line-height: 1.2;">작은 조각에<br>담긴 시흥</h1>
+    <p class="font-body text-xs tracking-widest uppercase mb-8" style="color: #444; letter-spacing: 0.12em;">SIHEUNG LOCAL BRANDING PROJECT EXHIBITION</p>
+    <div class="divider mx-auto mb-8" style="background-color: #2A5208;"></div>
+    <div class="text-center space-y-2">
+      <p class="font-body text-sm" style="color: #555;">2026. 6. 10. (Wed.) — 6. 24. (Wed.)</p>
+      <p class="font-body text-sm" style="color: #555;">배곧해솔중학교 2학년 미술 작품 전시</p>
+    </div>
+  </div>
+  <div class="pb-8 animate-pulse">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2A5208" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+  </div>
+</header>
+
+<section class="max-w-xl mx-auto px-6 pb-16 text-center">
+  <p class="font-body text-sm leading-relaxed" style="color: #444;">학생들이 한 학기 동안 관찰하고, 상상하고, 표현한 작품들을 모았습니다.<br>작은 손끝에서 피어난 세계를 함께 감상해 주세요.</p>
+</section>
+
+<!-- ② 수업 과정 LAYER -->
+<section class="max-w-3xl mx-auto px-6 py-20">
+  <h2 class="font-display text-3xl text-center mb-16" style="color: #1a1a1a;">이렇게 수업했어요</h2>
+  <div class="space-y-12">
+    <div class="flex gap-6 items-start">
+      <div class="flex-shrink-0 pt-1"><p class="font-display text-4xl font-bold" style="color: #2A5208;">L</p></div>
+      <div class="flex-shrink-0"><div class="rounded-sm" style="overflow:hidden;width:120px;height:90px;"><img src="L.jpg" alt="L단계" style="width:100%;height:100%;object-fit:cover;display:block;"></div></div>
+      <div class="flex-1">
+        <p class="font-display text-lg" style="color: #1a1a1a;">시흥을 눈에 담다</p>
+        <p class="font-body text-sm mt-1" style="color: #444;">시흥의 랜드마크와 자연을 탐구하고 마인드맵으로 정리했어요</p>
+      </div>
+    </div>
+    <div class="flex gap-6 items-start">
+      <div class="flex-shrink-0 pt-1"><p class="font-display text-4xl font-bold" style="color: #2A5208;">A</p></div>
+      <div class="flex-shrink-0"><div class="rounded-sm" style="overflow:hidden;width:120px;height:90px;"><img src="A.jpg" alt="A단계" style="width:100%;height:100%;object-fit:cover;display:block;"></div></div>
+      <div class="flex-1">
+        <p class="font-display text-lg" style="color: #1a1a1a;">이야기를 찾다</p>
+        <p class="font-body text-sm mt-1" style="color: #444;">내가 담고 싶은 시흥의 이야기를 스스로 선택하고 이유를 썼어요</p>
+      </div>
+    </div>
+    <div class="flex gap-6 items-start">
+      <div class="flex-shrink-0 pt-1"><p class="font-display text-4xl font-bold" style="color: #2A5208;">Y</p></div>
+      <div class="flex-shrink-0"><div class="rounded-sm" style="overflow:hidden;width:120px;height:90px;"><img src="Y.jpg" alt="Y단계" style="width:100%;height:100%;object-fit:cover;display:block;"></div></div>
+      <div class="flex-1">
+        <p class="font-display text-lg" style="color: #1a1a1a;">시흥과 연결하다</p>
+        <p class="font-body text-sm mt-1" style="color: #444;">나의 경험과 시흥을 연결하여 레이어 구성을 스케치했어요</p>
+      </div>
+    </div>
+    <div class="flex gap-6 items-start">
+      <div class="flex-shrink-0 pt-1"><p class="font-display text-4xl font-bold" style="color: #2A5208;">E</p></div>
+      <div class="flex-shrink-0"><div class="rounded-sm" style="overflow:hidden;width:120px;height:90px;"><img src="E.jpg" alt="E단계" style="width:100%;height:100%;object-fit:cover;display:block;"></div></div>
+      <div class="flex-1">
+        <p class="font-display text-lg" style="color: #1a1a1a;">손으로 만들다</p>
+        <p class="font-body text-sm mt-1" style="color: #444;">디지털 작화와 슈링클스 기법으로 입체 기념품을 완성했어요</p>
+      </div>
+    </div>
+    <div class="flex gap-6 items-start">
+      <div class="flex-shrink-0 pt-1"><p class="font-display text-4xl font-bold" style="color: #2A5208;">R</p></div>
+      <div class="flex-shrink-0"><div class="rounded-sm" style="overflow:hidden;width:120px;height:90px;"><img src="R.jpg" alt="R단계" style="width:100%;height:100%;object-fit:cover;display:block;"></div></div>
+      <div class="flex-1">
+        <p class="font-display text-lg" style="color: #1a1a1a;">함께 나누다</p>
+        <p class="font-body text-sm mt-1" style="color: #444;">발표와 전시로 시흥의 이야기를 세상에 내놓았어요</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 작품/카탈로그 바로가기 버튼 -->
+<section class="max-w-3xl mx-auto px-6 py-12">
+  <h2 class="font-display text-3xl text-center mb-12" style="color: #1a1a1a;">작품을 감상해보세요</h2>
+  <div class="flex gap-4 justify-center flex-wrap">
+    <button onclick="document.getElementById('gallery-tabs').scrollIntoView({behavior:'smooth'})" class="py-3 px-6 rounded-2xl font-body text-sm font-medium transition-all hover:shadow-lg" style="background-color:#2A5208;color:white;">지역 기념품 마그넷 보기</button>
+    <button onclick="document.getElementById('flipbook-gallery').scrollIntoView({behavior:'smooth'})" class="py-3 px-6 rounded-2xl font-body text-sm font-medium transition-all hover:shadow-lg" style="background-color:#2A5208;color:white;">홍보 카탈로그 보기</button>
+  </div>
+</section>
+
+<!-- ③-A 지역 기념품 갤러리 -->
+<section id="souvenir-gallery" class="w-full px-4 py-12">
+  <div class="max-w-4xl mx-auto flex justify-center">
+    <div class="rounded-sm overflow-hidden" style="width:100%;max-width:480px;cursor:pointer;" onclick="openModal('map.png')" title="클릭하면 크게 볼 수 있어요">
+      <img src="map.png" alt="시흥시 5대 권역 지도" style="width:100%;height:auto;display:block;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+    </div>
+  </div>
+  <p class="font-body text-xs text-center mt-4" style="color:#666;">학생들은 시흥의 다양한 랜드마크를 직접 조사하여 작품 소재로 담았습니다.</p>
+</section>
+
+<section class="max-w-4xl mx-auto px-4 py-8">
+  <h2 class="font-display text-4xl text-center mb-4" style="color:#1a1a1a;">지역 기념품 마그넷 갤러리</h2>
+  <p class="font-body text-sm text-center leading-relaxed max-w-2xl mx-auto" style="color:#555;">학생들은 시흥의 골목, 바다, 랜드마크를 직접 찾아보고 그 풍경을 거리에 따라 근경·중경·원경 세 개 이상의 층으로 나누었습니다. 가까이 보이는 주인공부터 멀리 펼쳐지는 하늘까지 — 층층이 나누어 그린 조각들을 하나씩 구운 뒤 차곡차곡 쌓아 올려 입체 마그넷으로 완성했습니다. 작은 손 위에서 탄생한 시흥의 풍경을 가까이 들여다봐 주세요.</p>
+</section>
+
+<!-- 갤러리 탭: 반 선택 -->
+<section class="max-w-4xl mx-auto px-4 pb-8">
+  <div class="flex gap-2 justify-center flex-wrap" id="gallery-tabs">
+    <!-- 탭은 JS로 렌더링 -->
+  </div>
+</section>
+
+
+
+<section class="max-w-4xl mx-auto px-4 pb-20">
+  <div id="gallery-grid" class="flex flex-wrap gap-2 justify-center" style="align-content:flex-start;"></div>
+</section>
+
+<!-- 이미지 모달 -->
+<div id="imageModal" class="modal">
+  <div style="max-width:92vw;max-height:92vh;position:relative;">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <img id="modal-img" src="" alt="" style="max-width:92vw;max-height:88vh;object-fit:contain;border-radius:4px;display:block;">
+  </div>
+</div>
+
+<!-- ③-B 플립북 (홍보 카탈로그) -->
+<section id="flipbook-gallery" class="w-full px-4 py-12 border-t" style="border-color:#e0ddd6;">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="font-display text-4xl text-center mb-4" style="color:#1a1a1a;">우리가 만든 홍보 카탈로그</h2>
+    <p class="font-body text-sm text-center leading-relaxed max-w-2xl mx-auto mb-6" style="color:#555;">조원은 무작위로 구성되었습니다. 서로 다른 랜드마크의 마그넷을 들고 모인 조원들이 작품의 공통점이나 관통하는 컨셉을 찾아 하나의 브랜드 컨셉으로 묶는 것, 그것이 이 수업의 핵심이었습니다.<br><br>학생들은 기획가·창작가·소통가·탐구가 역할을 나누어 브랜드 이름과 슬로건을 만들고, 타깃 고객과 가격까지 직접 설정했습니다. 완성된 카탈로그는 반 전체 앞에서 직접 발표했습니다. 여러분이 보시는 카탈로그는 처음부터 끝까지 학생들의 손으로 기획하고 발표한 결과물입니다.</p>
+    <p class="font-body text-xs text-center mb-10" style="color:#666;">반을 선택한 뒤 카탈로그 썸네일을 누르면 아래에서 바로 감상할 수 있어요.</p>
+
+    <!-- 플립북 탭 -->
+    <div class="flex gap-2 justify-center flex-wrap mb-10" id="flipbook-tabs"></div>
+
+    <!-- 팀 썸네일 그리드 -->
+    <div class="mb-4 text-center">
+      <div id="flipbook-grid" class="flex gap-4 justify-center flex-wrap" style="align-items:flex-start;"></div>
+    </div>
+    <div id="flipbook-info" class="font-body text-sm text-center mb-4" style="color:#2A5208;min-height:24px;"></div>
+
+    <!-- 뷰어 -->
+    <div id="flipbook-viewer-wrap" class="mb-20 rounded-sm overflow-hidden border" style="border-color:#d8d2c8;background:white;">
+      <div id="flipbook-empty" class="font-body text-sm text-center py-16" style="color:#666;">카탈로그 썸네일을 선택하면 이곳에서 바로 볼 수 있어요.</div>
+      <iframe id="flipbook-viewer" title="홍보 카탈로그 미리보기" src="" style="display:none;width:100%;height:50vh;min-height:392px;border:0;" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- 오프라인 전시 안내 -->
+<section class="max-w-2xl mx-auto px-6 py-16 border-t" style="border-color:#e0ddd6;">
+  <div class="text-center">
+    <div class="divider mx-auto mb-8" style="background-color:#2A5208;"></div>
+    <p class="font-body text-xs tracking-widest uppercase mb-4" style="color:#2A5208;letter-spacing:0.15em;">OFFLINE EXHIBITION</p>
+    <h3 class="font-display text-2xl mb-6" style="color:#1a1a1a;">오프라인 전시도 진행 중이에요</h3>
+    <p class="font-body text-sm leading-relaxed mb-8" style="color:#444;">
+      온라인으로만 감상하기 아쉽다면 직접 방문해보세요.<br>
+      단, 오프라인 전시에는 공간 상의 문제로 일부 작품만 전시되어 있습니다.<br>
+      자세한 사항은 가정통신문을 참고해 주세요.
+    </p>
+    <div class="inline-block text-left rounded-sm px-8 py-6" style="background:#f0f5ed;border:1px solid #d4e2c8;">
+      <div class="space-y-3">
+        <div class="flex items-baseline gap-4">
+          <span class="font-body text-xs" style="color:#2A5208;letter-spacing:0.08em;white-space:nowrap;">전시 기간</span>
+          <span class="font-body text-sm" style="color:#333;">2026. 6. 10. (Wed.) — 6. 24. (Wed.)</span>
+        </div>
+        <div class="flex items-baseline gap-4">
+          <span class="font-body text-xs" style="color:#2A5208;letter-spacing:0.08em;white-space:nowrap;">전시 장소</span>
+          <span class="font-body text-sm" style="color:#333;">배곧2청소년문화의집 3층 로비</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ④ 방명록 (Formspree 연동 — FORMSPREE_ID 교체 필요) -->
+<section id="guestbook" class="max-w-2xl mx-auto px-6 py-20 border-t" style="border-color:#e0ddd6;">
+  <div class="divider mx-auto mb-8" style="background-color:#2A5208;"></div>
+  <div class="mb-12">
+    <p class="font-body text-sm leading-relaxed text-center mb-2" style="color:#444;">자녀는 올해 미술 시간에 시흥의 랜드마크를 직접 조사하고, 레이어 기법으로 나만의 기념품을 만들었습니다.</p>
+    <p class="font-body text-sm leading-relaxed text-center" style="color:#444;">소중한 한 마디를 남겨주세요. 💚</p>
+  </div>
+
+  <!--
+    ★ Formspree 설정 방법 ★
+    1. https://formspree.io 접속 → 무료 가입
+    2. "New Form" 생성 → 이메일 입력
+    3. 생성된 form endpoint(예: https://formspree.io/f/xyzabcde)를 아래 action에 붙여넣기
+    4. 이메일로 응답 알림 수신 + 대시보드에서 전체 내역 확인 가능
+  -->
+  <form id="guestbook-form" action="https://formspree.io/f/mjgdyezr" method="POST" class="space-y-6">
+
+    <p class="font-body text-xs leading-relaxed p-3 rounded-sm" style="background:#f0f5ed;color:#555;border:1px solid #d4e2c8;">입력하신 정보는 담당 교사 전달 목적에만 사용됩니다.</p>
+
+    <!-- 자녀 반 선택 -->
+    <div>
+      <label for="child-class" class="font-body text-sm block mb-2" style="color:#333;">자녀의 반 <span style="color:#2A5208;">*</span></label>
+      <select id="child-class" name="child_class" required class="w-full p-3 rounded-sm border font-body text-sm" style="border-color:#ddd;background:white;color:#333;">
+        <option value="">반을 선택해주세요</option>
+        <option value="선택안함">선택안함</option>
+        <option value="1반">1반</option>
+        <option value="2반">2반</option>
+        <option value="3반">3반</option>
+        <option value="4반">4반</option>
+        <option value="5반">5반</option>
+        <option value="6반">6반</option>
+        <option value="7반">7반</option>
+        <option value="8반">8반</option>
+        <option value="9반">9반</option>
+        <option value="10반">10반</option>
+        <option value="11반">11반</option>
+        <option value="12반">12반</option>
+        <option value="13반">13반</option>
+        <option value="14반">14반</option>
+      </select>
+    </div>
+
+    <!-- 자녀 이름 -->
+    <div>
+      <label for="child-name" class="font-body text-sm block mb-2" style="color:#333;">자녀 이름 <span style="color:#2A5208;">*</span></label>
+      <input type="text" id="child-name" name="child_name" placeholder="예: 홍길동" required class="w-full p-3 rounded-sm border font-body text-sm" style="border-color:#ddd;background:white;color:#333;">
+    </div>
+    <div>
+      <label for="feedback1" class="font-body text-sm block mb-2" style="color:#333;">자녀의 작품을 보고 한 마디 남겨주세요.</label>
+      <p class="font-body text-xs mb-3" style="color:#666;">(학생의 학년·반을 써주시면 전달됩니다)</p>
+      <textarea id="feedback1" name="feedback_to_child" placeholder="따뜻한 응원의 말씀을 부탁드립니다." rows="4" class="w-full p-3 rounded-sm border font-body text-sm" style="border-color:#ddd;background:white;color:#333;"></textarea>
+    </div>
+    <div>
+      <label for="feedback2" class="font-body text-sm block mb-2" style="color:#333;">작품을 보고 느낀 점이나 선생님께 전하고 싶은 말</label>
+      <p class="font-body text-xs mb-3" style="color:#666;">소중한 한 마디가 더 좋은 수업을 만드는 데 쓰입니다. 🙏</p>
+      <textarea id="feedback2" name="feedback_to_teacher" placeholder="자유롭게 남겨주세요." rows="4" class="w-full p-3 rounded-sm border font-body text-sm" style="border-color:#ddd;background:white;color:#333;"></textarea>
+    </div>
+    <!-- Formspree 스팸 방지 (건드리지 마세요) -->
+    <input type="text" name="_gotcha" style="display:none;">
+    <input type="hidden" name="_subject" value="[L.A.Y.E.R. 전시] 방명록 응답">
+    <button type="submit" class="w-full py-3 px-4 rounded-2xl font-body text-sm font-medium transition-all hover:shadow-lg" style="background-color:#2A5208;color:white;">제출하기</button>
+  </form>
+
+  <div id="success-message" class="hidden mt-6 p-4 rounded-sm text-center font-body text-sm" style="background-color:#f0f5ed;color:#2A5208;border:1px solid #d4e2c8;">
+    감사합니다! 소중한 의견이 전달되었습니다. 💚
+  </div>
+</section>
+
+<!-- ⑤ 푸터 -->
+<footer class="text-center py-16 px-6" style="background-color:#2A5208;">
+  <div class="divider mx-auto mb-6" style="background-color:rgba(255,255,255,0.4);"></div>
+  <p class="font-body text-sm leading-relaxed mb-2" style="color:rgba(255,255,255,0.85);">
+    배곧해솔중학교 미술과
+  </p>
+  <p class="font-body text-xs mb-4" style="color:rgba(255,255,255,0.55);">지도교사: 최민지, 오찬주</p>
+  <p class="font-body text-xs" style="color:rgba(255,255,255,0.55);">L.A.Y.E.R. 지역 브랜딩 프로젝트 2026</p>
+  <p class="font-body text-xs mt-6" style="color:rgba(255,255,255,0.25);">Website designed &amp; developed by Oh Chanjoo</p>
+</footer>
+
+<script>
+// ══════════════════════════════════════════════
+//  갤러리 데이터
+//  student: 이름 (예: '2-11 홍○동')
+//  location: 지역/주제
+//  image: 이미지 URL (없으면 '' 빈 문자열)
+// ══════════════════════════════════════════════
+const artworkData = {
+  '1': [
+    {student:'20101 김O민', location:'옥구공원', image:'1/1_01.png'},
+    {student:'20102 김O훈', location:'갯골생태공원', image:'1/1_02.png'},
+    {student:'20103 김O열', location:'갯골생태공원', image:'1/1_03.png'},
+    {student:'20104 김O후', location:'해로와 토로', image:'1/1_04.png'},
+    {student:'20105 김O도', location:'옥구공원', image:'1/1_05.png'},
+    {student:'20106 김O은', location:'수변공원', image:'1/1_06.png'},
+    {student:'20107 김O유', location:'평화의 소녀산', image:'1/1_07.png'},
+    {student:'20108 김O늘', location:'시흥의 일출', image:'1/1_08.png'},
+    {student:'20109 남O은', location:'거북섬 웨이브파크', image:'1/1_09.png'},
+    {student:'20110 박O연', location:'월곶포구', image:'1/1_10.png'},
+    {student:'20111 박O수', location:'생명의 나무', image:'1/1_11.png'},
+    {student:'20112 박O우', location:'오이도 빨간등대', image:'1/1_12.png'},
+    {student:'20113 신O진', location:'갯골생태공원', image:'1/1_13.png'},
+    {student:'20114 심O율', location:'거북섬 아쿠아펫랜드', image:'1/1_14.png'},
+    {student:'20115 염O혁', location:'별빛공원', image:'1/1_15.png'},
+    {student:'20116 오O빈', location:'해로와 토로', image:'1/1_16.png'},
+    {student:'20117 이O람', location:'오이도 빨간등대', image:'1/1_17.png'},
+    {student:'20118 이O현', location:'생명의 나무', image:'1/1_18.png'},
+    {student:'20119 이O영', location:'거북섬 웨이브파크', image:'1/1_19.png'},
+    {student:'20120 이O환', location:'갯골생태공원', image:'1/1_20.png'},
+    {student:'20121 임O린', location:'갯골생태공원', image:'1/1_21.png'},
+    {student:'20122 장O윤', location:'거북섬 웨이브파크', image:'1/1_22.png'},
+    {student:'20124 정O하', location:'거북섬 웨이브파크', image:'1/1_23.png'},
+    {student:'20125 정O균', location:'시흥의 야경', image:'1/1_24.png'},
+    {student:'20126 진O원', location:'거북섬 어린왕자', image:'1/1_25.png'},
+    {student:'20127 최O우', location:'한울공원', image:'1/1_26.png'},
+    {student:'20128 최O원', location:'옥구산', image:'1/1_27.png'},
+    {student:'20129 카O승', location:'해로와 토로', image:'1/1_28.png'},
+    {student:'20130 허O준', location:'마리나 경관브릿지', image:'1/1_29.png'},
+  ],
+  '2': [
+    {student:'20201 강O양', location:'오이도 빨간등대', image:'2/2_01.png'},
+    {student:'20202 강O원', location:'오이도 빨간등대', image:'2/2_02.png'},
+    {student:'20203 김O은', location:'오이도 빨간등대', image:'2/2_03.png'},
+    {student:'20204 김O현', location:'거북섬 웨이브파크', image:'2/2_04.png'},
+    {student:'20205 김O건', location:'선사유적지', image:'2/2_05.png'},
+    {student:'20206 김O우', location:'갯골생태공원', image:'2/2_06.png'},
+    {student:'20207 김O은', location:'OASIS 함상전망대', image:'2/2_07.png'},
+    {student:'20208 김O재', location:'시흥의 먹거리', image:'2/2_08.png'},
+    {student:'20209 김O후', location:'옥구산', image:'2/2_09.png'},
+    {student:'20210 김O원', location:'오이도 빨간등대', image:'2/2_10.png'},
+    {student:'20211 노O학', location:'연꽃테마파크', image:'2/2_11.png'},
+    {student:'20212 노O윤', location:'오이도 빨간등대', image:'2/2_12.png'},
+    {student:'20213 박O빈', location:'갯골생태공원', image:'2/2_13.png'},
+    {student:'20214 박O은', location:'오이도 빨간등대', image:'2/2_14.png'},
+    {student:'20215 손O민', location:'바다 속 풍경', image:'2/2_15.png'},
+    {student:'20216 심O혁', location:'바다 속 풍경', image:'2/2_16.png'},
+    {student:'20217 오O혁', location:'옥구공원', image:'2/2_17.png'},
+    {student:'20218 우O겸', location:'거북섬 어린왕자', image:'2/2_18.png'},
+    {student:'20219 윤O상', location:'OASIS 함상전망대', image:'2/2_19.png'},
+    {student:'20220 이O현', location:'거북섬 웨이브파크', image:'2/2_20.png'},
+    {student:'20221 이O리', location:'거북섬 웨이브파크', image:'2/2_21.png'},
+    {student:'20222 이O설', location:'오이도 빨간등대', image:'2/2_22.png'},
+    {student:'20223 이O석', location:'시흥 지역', image:'2/2_23.png'},
+    {student:'20224 이O원', location:'시흥 풍경', image:'2/2_24.png'},
+    {student:'20225 이O원', location:'오이도 빨간등대', image:'2/2_25.png'},
+    {student:'20226 전O나', location:'오이도 빨간등대', image:'2/2_26.png'},
+    {student:'20227 정O찬', location:'오이도 빨간등대', image:'2/2_27.png'},
+    {student:'20228 조O인', location:'선사유적지', image:'2/2_28.png'},
+    {student:'20229 조O우', location:'오이도 빨간등대', image:'2/2_29.png'},
+    {student:'20230 최O완', location:'선사유적지', image:'2/2_30.png'},
+    {student:'20231 고O석', location:'시흥의 먹거리', image:'2/2_31.png'},
+  ],
+  '3': [
+    {student:'20301 마O', location:'바다와 칼국수', image:'3/3_01.png'},
+    {student:'20302 김O민', location:'오이도 빨간등대', image:'3/3_02.png'},
+    {student:'20303 김O예', location:'관촉사 연꽃', image:'3/3_03.png'},
+    {student:'20304 김O연', location:'오이도 빨간등대', image:'3/3_04.png'},
+    {student:'20305 김O찬', location:'오이도 빨간등대', image:'3/3_05.png'},
+    {student:'20306 김O하', location:'해로토로와 바다', image:'3/3_06.png'},
+    {student:'20307 김O율', location:'생명공원', image:'3/3_07.png'},
+    {student:'20308 김O윤', location:'오이도 빨간등대', image:'3/3_08.png'},
+    {student:'20309 김O찬', location:'오이도 빨간등대', image:'3/3_09.png'},
+    {student:'20310 나O서', location:'거북섬', image:'3/3_10.png'},
+    {student:'20311 민O빈', location:'오이도 빨간등대', image:'3/3_11.png'},
+    {student:'20312 박O우', location:'오이도 빨간등대', image:'3/3_12.png'},
+    {student:'20313 서O윤', location:'오이도 빨간등대', image:'3/3_13.png'},
+    {student:'20314 송O령', location:'오이도 빨간등대', image:'3/3_14.png'},
+    {student:'20315 연O율', location:'갯골생태공원', image:'3/3_15.png'},
+    {student:'20316 오O원', location:'생명의 나무', image:'3/3_16.png'},
+    {student:'20317 우O훈', location:'오이도 빨간등대', image:'3/3_17.png'},
+    {student:'20318 이O우', location:'옥구공원', image:'3/3_18.png'},
+    {student:'20319 이O제', location:'오이도 빨간등대', image:'3/3_19.png'},
+    {student:'20320 이O이', location:'오이도 빨간등대', image:'3/3_20.png'},
+    {student:'20321 이O하', location:'오이도 빨간등대', image:'3/3_21.png'},
+    {student:'20322 임O온', location:'스마트허브', image:'3/3_22.png'},
+    {student:'20323 장O원', location:'오이도 빨간등대', image:'3/3_23.png'},
+    {student:'20324 장O채', location:'생명의 나무', image:'3/3_24.png'},
+    {student:'20325 정O연', location:'오이도 빨간등대', image:'3/3_25.png'},
+    {student:'20326 조O욱', location:'거북섬', image:'3/3_26.png'},
+    {student:'20327 진O환', location:'물왕호수', image:'3/3_27.png'},
+    {student:'20328 최O윤', location:'오이도박물관', image:'3/3_28.png'},
+    {student:'20329 하O록', location:'거북섬', image:'3/3_29.png'},
+    {student:'20330 함O연', location:'오이도 빨간등대', image:'3/3_30.png'},
+    {student:'20331 강O찬', location:'빨간등대와 흔들전망대', image:'3/3_31.png'},
+  ],
+  '4': [
+    {student:'20401 김O원', location:'갯골생태공원', image:'4/4_01.png'},
+    {student:'20402 김O아', location:'관촉사 연꽃테마파크', image:'4/4_02.png'},
+    {student:'20403 김O호', location:'선사유적지', image:'4/4_03.png'},
+    {student:'20404 김O준', location:'선사유적지', image:'4/4_04.png'},
+    {student:'20405 김O중', location:'옥구공원', image:'4/4_05.png'},
+    {student:'20406 박O호', location:'OASIS 함상전망대', image:'4/4_06.png'},
+    {student:'20407 박O윤', location:'전국노래자랑', image:'4/4_07.png'},
+    {student:'20408 박O율', location:'오이도 빨간등대', image:'4/4_08.png'},
+    {student:'20409 박O혁', location:'선사유적지', image:'4/4_09.png'},
+    {student:'20410 박O율', location:'생명공원', image:'4/4_10.png'},
+    {student:'20411 박O인', location:'오이도 빨간등대', image:'4/4_11.png'},
+    {student:'20412 손O영', location:'한울공원', image:'4/4_12.png'},
+    {student:'20413 송O민', location:'갯골생태공원', image:'4/4_13.png'},
+    {student:'20414 신O한', location:'갯골생태공원', image:'4/4_14.png'},
+    {student:'20415 유O환', location:'생명공원', image:'4/4_15.png'},
+    {student:'20416 윤O영', location:'오이도박물관', image:'4/4_16.png'},
+    {student:'20417 이O솔', location:'시흥 늠내길', image:'4/4_17.png'},
+    {student:'20418 이O애', location:'전국노래자랑', image:'4/4_18.png'},
+    {student:'20419 이O제', location:'갯골생태공원', image:'4/4_19.png'},
+    {student:'20420 이O찬', location:'거북섬 웨이브파크', image:'4/4_20.png'},
+    {student:'20421 이O서', location:'갯골생태공원', image:'4/4_21.png'},
+    {student:'20422 이O은', location:'한울공원 천국의계단', image:'4/4_22.png'},
+    {student:'20423 전O인', location:'거북섬 맥주축제', image:'4/4_23.png'},
+    {student:'20424 정O재', location:'오이도 빨간등대', image:'4/4_24.png'},
+    {student:'20425 정O원', location:'오이도 빨간등대', image:'4/4_25.png'},
+    {student:'20426 정O민', location:'시흥 갯골 축제', image:'4/4_26.png'},
+    {student:'20427 정O욱', location:'선사유적지', image:'4/4_27.png'},
+    {student:'20428 조O랑', location:'갯골생태공원', image:'4/4_28.png'},
+    {student:'20429 최O교', location:'연꽃테마파크', image:'4/4_29.png'},
+    {student:'20430 최O진', location:'오이도역 산타페스타', image:'4/4_30.png'},
+  ],
+  '5': [
+    {student:'20501 강O호', location:'오이도 조개구이', image:'5/5_01.png'},
+    {student:'20502 구O현', location:'시흥의 랜드마크', image:'5/5_02.png'},
+    {student:'20503 권O휘', location:'옥구산', image:'5/5_03.png'},
+    {student:'20504 김O진', location:'오이도 빨간등대', image:'5/5_04.png'},
+    {student:'20505 김O연', location:'시흥 지역', image:'5/5_05.png'},
+    {student:'20506 김O헌', location:'시흥 지역', image:'5/5_06.png'},
+    {student:'20507 김O후', location:'연꽃테마파크', image:'5/5_07.png'},
+    {student:'20508 노O호', location:'갯골생태공원', image:'5/5_08.png'},
+    {student:'20509 박O휘', location:'시흥 지역', image:'5/5_09.png'},
+    {student:'20510 박O은', location:'옥구공원', image:'5/5_10.png'},
+    {student:'20511 박O안', location:'물왕호수', image:'5/5_11.png'},
+    {student:'20512 박O승', location:'시흥의 특산품 포도', image:'5/5_12.png'},
+    {student:'20513 서O은', location:'갯골생태공원', image:'5/5_13.png'},
+    {student:'20514 서O우', location:'연꽃테마파크', image:'5/5_14.png'},
+    {student:'20515 송O석', location:'오이도 빨간등대', image:'5/5_15.png'},
+    {student:'20516 신O준', location:'시흥 지역', image:'5/5_16.png'},
+    {student:'20517 오O린', location:'거북섬 다이빙', image:'5/5_17.png'},
+    {student:'20518 우O완', location:'어린이 풀장', image:'5/5_18.png'},
+    {student:'20519 윤O현', location:'시흥의 바다', image:'5/5_19.png'},
+    {student:'20520 윤O현', location:'거북섬', image:'5/5_20.png'},
+    {student:'20521 이O준', location:'생명공원', image:'5/5_21.png'},
+    {student:'20522 이O혜', location:'거북섬 파도풀', image:'5/5_22.png'},
+    {student:'20523 임O환', location:'거북섬 온수풀', image:'5/5_23.png'},
+    {student:'20524 전O진', location:'거북섬 웨이브파크', image:'5/5_24.png'},
+    {student:'20525 정O윤', location:'시흥 지역', image:'5/5_25.png'},
+    {student:'20526 정O서', location:'갯골생태공원', image:'5/5_26.png'},
+    {student:'20527 조O현', location:'오이도 빨간등대', image:'5/5_27.png'},
+    {student:'20528 천O윤', location:'거북섬 서핑', image:'5/5_28.png'},
+    {student:'20529 최O현', location:'거북섬의 노을', image:'5/5_29.png'},
+    {student:'20530 황O유', location:'연꽃테마파크', image:'5/5_30.png'},
+  ],
+  '6': [
+    {student:'20601 강O민', location:'용도수목원', image:'6/6_01.png'},
+    {student:'20602 강O아', location:'거북섬 웨이브파크', image:'6/6_02.png'},
+    {student:'20603 권O영', location:'연꽃테마파크', image:'6/6_03.png'},
+    {student:'20604 김O민', location:'경관브릿지', image:'6/6_04.png'},
+    {student:'20605 김O윤', location:'거북섬 터틀풀', image:'6/6_05.png'},
+    {student:'20607 김O윤', location:'오이도 빨간등대', image:'6/6_06.png'},
+    {student:'20608 김O율', location:'물왕호수', image:'6/6_07.png'},
+    {student:'20609 나O희', location:'갯골생태공원', image:'6/6_08.png'},
+    {student:'20610 박O현', location:'거북섬 별빛공원', image:'6/6_09.png'},
+    {student:'20611 박O혜', location:'거북섬 웨이브파크', image:'6/6_10.png'},
+    {student:'20612 박O아', location:'거북섬 해양 카약', image:'6/6_11.png'},
+    {student:'20613 배O랑', location:'거북섬 웨이브파크', image:'6/6_12.png'},
+    {student:'20614 서O준', location:'갯골생태공원', image:'6/6_13.png'},
+    {student:'20615 안O재', location:'해로와 토로', image:'6/6_14.png'},
+    {student:'20616 양O우', location:'옥구산', image:'6/6_15.png'},
+    {student:'20617 양O양', location:'평화의 소녀상', image:'6/6_16.png'},
+    {student:'20618 윤O균', location:'물왕저수지', image:'6/6_17.png'},
+    {student:'20619 이O준', location:'선사유적지', image:'6/6_18.png'},
+    {student:'20620 이O린', location:'거북섬 웨이브파크', image:'6/6_19.png'},
+    {student:'20621 이O찬', location:'거북섬 웨이브파크', image:'6/6_20.png'},
+    {student:'20622 이O우', location:'거북섬 웨이브파크', image:'6/6_21.png'},
+    {student:'20623 이O서', location:'시흥의 먹거리', image:'6/6_22.png'},
+    {student:'20624 이O건', location:'갯골생태공원', image:'6/6_23.png'},
+    {student:'20625 조O희', location:'연꽃테마파크', image:'6/6_24.png'},
+    {student:'20626 천O호', location:'오이도 빨간등대', image:'6/6_25.png'},
+    {student:'20627 천O주', location:'연꽃테마파크', image:'6/6_26.png'},
+    {student:'20628 최O호', location:'선사유적지', image:'6/6_27.png'},
+    {student:'20629 홍O율', location:'갯골생태공원', image:'6/6_28.png'},
+    {student:'20630 황O윤', location:'옥구공원', image:'6/6_29.png'},
+  ],
+  '7': [
+    {student:'20701 고O연', location:'오이도 빨간등대', image:'7/7_01.png'},
+    {student:'20702 권O율', location:'오이도 빨간등대', image:'7/7_02.png'},
+    {student:'20703 김O현', location:'시흥의 바다', image:'7/7_03.png'},
+    {student:'20704 김O진', location:'생명공원', image:'7/7_04.png'},
+    {student:'20705 김O민', location:'오이도 빨간등대', image:'7/7_05.png'},
+    {student:'20706 김O엽', location:'오이도 빨간등대', image:'7/7_06.png'},
+    {student:'20707 김O건', location:'시흥 지역', image:'7/7_07.png'},
+    {student:'20708 김O양', location:'거북섬 웨이브파크', image:'7/7_08.png'},
+    {student:'20709 김O엘', location:'오이도 빨간등대와 연꽃', image:'7/7_09.png'},
+    {student:'20710 김O연', location:'소래산 석조마애불상', image:'7/7_10.png'},
+    {student:'20711 남O연', location:'거북섬 웨이브파크', image:'7/7_11.png'},
+    {student:'20712 남O민', location:'소래산 석조마애불상', image:'7/7_12.png'},
+    {student:'20714 박O연', location:'오이도 빨간등대', image:'7/7_13.png'},
+    {student:'20715 박O윤', location:'오이도 빨간등대', image:'7/7_14.png'},
+    {student:'20716 박O현', location:'월곶', image:'7/7_15.png'},
+    {student:'20717 서O완', location:'시흥 지역', image:'7/7_16.png'},
+    {student:'20718 안O진', location:'오이도 빨간등대', image:'7/7_17.png'},
+    {student:'20719 우O규', location:'시흥의 풍경', image:'7/7_18.png'},
+    {student:'20720 이O건', location:'생명공원', image:'7/7_19.png'},
+    {student:'20721 이O주', location:'오이도 빨간등대', image:'7/7_20.png'},
+    {student:'20722 임O유', location:'소래산', image:'7/7_21.png'},
+    {student:'20723 장O안', location:'오이도 빨간등대', image:'7/7_22.png'},
+    {student:'20724 정O아', location:'시흥 지역', image:'7/7_23.png'},
+    {student:'20725 정O윤', location:'시흥 지역', image:'7/7_24.png'},
+    {student:'20726 정O연', location:'오이도 빨간등대', image:'7/7_25.png'},
+    {student:'20727 조O현', location:'소래산', image:'7/7_26.png'},
+    {student:'20728 조O진', location:'한울공원', image:'7/7_27.png'},
+    {student:'20729 최O아', location:'해루질', image:'7/7_28.png'},
+    {student:'20730 최O안', location:'오이도 빨간등대', image:'7/7_29.png'},
+  ],
+  '8': [
+    {student:'20801 권O', location:'생명의 나무', image:'8/8_01.png'},
+    {student:'20802 김O우', location:'물왕호수', image:'8/8_02.png'},
+    {student:'20803 김O연', location:'갯골생태공원', image:'8/8_03.png'},
+    {student:'20804 김O연', location:'물왕호수', image:'8/8_04.png'},
+    {student:'20805 김O율', location:'생명의 나무', image:'8/8_05.png'},
+    {student:'20806 김O울', location:'생명공원', image:'8/8_06.png'},
+    {student:'20807 남O우', location:'오이도 빨간등대', image:'8/8_07.png'},
+    {student:'20808 류O연', location:'오이도 빨간등대', image:'8/8_08.png'},
+    {student:'20809 박O준', location:'선사유적지', image:'8/8_09.png'},
+    {student:'20810 박O원', location:'오이도 박물관', image:'8/8_10.png'},
+    {student:'20811 박O서', location:'생명공원', image:'8/8_11.png'},
+    {student:'20812 박O형', location:'오이도 빨간등대', image:'8/8_12.png'},
+    {student:'20814 소O우', location:'바다와 연꽃', image:'8/8_13.png'},
+    {student:'20815 오O담', location:'오이도 빨간등대', image:'8/8_14.png'},
+    {student:'20816 위O영', location:'오이도 빨간등대', image:'8/8_15.png'},
+    {student:'20817 유O안', location:'갯골생태공원', image:'8/8_16.png'},
+    {student:'20818 윤O우', location:'거북섬', image:'8/8_17.png'},
+    {student:'20819 이O인', location:'선사유적지', image:'8/8_18.png'},
+    {student:'20820 이O영', location:'갯골생태공원', image:'8/8_19.png'},
+    {student:'20821 이O윤', location:'오이도 빨간등대', image:'8/8_20.png'},
+    {student:'20822 임O율', location:'관촉사 연꽃테마파크', image:'8/8_21.png'},
+    {student:'20823 장O람', location:'관촉사 연꽃테마파크', image:'8/8_22.png'},
+    {student:'20824 정O후', location:'물왕호수', image:'8/8_23.png'},
+    {student:'20825 조O진', location:'거북섬 웨이브파크', image:'8/8_24.png'},
+    {student:'20826 천O현', location:'생명공원', image:'8/8_25.png'},
+    {student:'20827 최O연', location:'오이도 빨간등대', image:'8/8_26.png'},
+    {student:'20828 최O혁', location:'오이도 빨간등대', image:'8/8_27.png'},
+    {student:'20829 하O서', location:'OASIS 함상전망대', image:'8/8_28.png'},
+  ],
+  '9': [
+    {student:'20901 김O태', location:'시흥 지역', image:'9/9_01.png'},
+    {student:'20902 김O욱', location:'관촉사 연꽃테마파크', image:'9/9_02.png'},
+    {student:'20903 김O겸', location:'갯골생태공원', image:'9/9_03.png'},
+    {student:'20904 김O아', location:'오이도역', image:'9/9_04.png'},
+    {student:'20905 김O희', location:'오이도 빨간등대', image:'9/9_05.png'},
+    {student:'20906 김O은', location:'은계호수공원', image:'9/9_06.png'},
+    {student:'20907 김O완', location:'갯골생태공원', image:'9/9_07.png'},
+    {student:'20908 남O아', location:'소래산 석조마애불상', image:'9/9_08.png'},
+    {student:'20909 박O준', location:'거북섬 어린왕자', image:'9/9_09.png'},
+    {student:'20910 박O연', location:'거북섬 웨이브파크', image:'9/9_10.png'},
+    {student:'20911 박O연', location:'한울공원 천국의계단', image:'9/9_11.png'},
+    {student:'20912 박O원', location:'OASIS 함상전망대', image:'9/9_12.png'},
+    {student:'20913 서O영', location:'오이도박물관', image:'9/9_13.png'},
+    {student:'20914 서O우', location:'거북섬 빙상', image:'9/9_14.png'},
+    {student:'20915 서O린', location:'마리나 경관브릿지', image:'9/9_15.png'},
+    {student:'20916 여O온', location:'해양 생태 과학관', image:'9/9_16.png'},
+    {student:'20917 오O율', location:'오이도역', image:'9/9_17.png'},
+    {student:'20918 유O화', location:'갯골생태공원', image:'9/9_18.png'},
+    {student:'20919 윤O산', location:'오이도 빨간등대', image:'9/9_19.png'},
+    {student:'20920 이O원', location:'선사유적지', image:'9/9_20.png'},
+    {student:'20921 임O주', location:'오이도역 포장마차', image:'9/9_21.png'},
+    {student:'20922 전O재', location:'오이도 빨간등대', image:'9/9_22.png'},
+    {student:'20923 전O민', location:'오이도역의 크리스마스', image:'9/9_23.png'},
+    {student:'20924 정O우', location:'거북섬 웨이브파크', image:'9/9_24.png'},
+    {student:'20925 조O연', location:'오이도 빨간등대', image:'9/9_25.png'},
+    {student:'20927 최O민', location:'브레드 빵집', image:'9/9_26.png'},
+    {student:'20928 한O호', location:'배곧 중심상가 시계탑', image:'9/9_27.png'},
+    {student:'20929 허O원', location:'거북섬 아쿠아 펫랜드', image:'9/9_28.png'},
+    {student:'20930 홍O린', location:'옥구공원', image:'9/9_29.png'},
+  ],
+  '10': [
+    {student:'21001 김O형', location:'오이도 빨간등대', image:'10/10_01.png'},
+    {student:'21002 김O형', location:'시흥의 바다', image:'10/10_02.png'},
+    {student:'21003 김O진', location:'림버스 컴퍼니', image:'10/10_03.png'},
+    {student:'21004 김O안', location:'오이도 빨간등대', image:'10/10_04.png'},
+    {student:'21005 김O서', location:'관촉사 연꽃테마파크', image:'10/10_05.png'},
+    {student:'21006 김O원', location:'물왕호수', image:'10/10_06.png'},
+    {student:'21007 김O완', location:'선사유적지', image:'10/10_07.png'},
+    {student:'21008 박O찬', location:'오이도 빨간등대', image:'10/10_08.png'},
+    {student:'21009 박O원', location:'거북섬 파라다이브', image:'10/10_09.png'},
+    {student:'21010 박O람', location:'바닷 속 풍경', image:'10/10_10.png'},
+    {student:'21011 윤O빈', location:'들녘길', image:'10/10_11.png'},
+    {student:'21012 윤O성', location:'시흥신세계프리미엄아울렛', image:'10/10_12.png'},
+    {student:'21013 이O찬', location:'해로와 토로', image:'10/10_13.png'},
+    {student:'21014 이O은', location:'연꽃테마파크', image:'10/10_14.png'},
+    {student:'21015 이O진', location:'물왕호수', image:'10/10_15.png'},
+    {student:'21016 이O준', location:'공룡박물관', image:'10/10_16.png'},
+    {student:'21018 이O우', location:'파도타는 해로와 토로', image:'10/10_17.png'},
+    {student:'21019 이O아', location:'선사유적지', image:'10/10_18.png'},
+    {student:'21020 이O율', location:'연꽃테마파크', image:'10/10_19.png'},
+    {student:'21021 이O빈', location:'소래산', image:'10/10_20.png'},
+    {student:'21022 장O음', location:'오이도 빨간등대', image:'10/10_21.png'},
+    {student:'21023 전O용', location:'시흥과 자석', image:'10/10_22.png'},
+    {student:'21024 정O인', location:'야경과 스케이트', image:'10/10_23.png'},
+    {student:'21025 조O원', location:'오이도 박물관', image:'10/10_24.png'},
+    {student:'21026 조O현', location:'시흥신세계프리미엄아울렛', image:'10/10_25.png'},
+    {student:'21027 최O형', location:'은계호수공원', image:'10/10_26.png'},
+    {student:'21028 최O원', location:'노을 게의 인사', image:'10/10_27.png'},
+    {student:'21029 최O승', location:'배곧해솔중학교 마스코', image:'10/10_28.png'},
+    {student:'21030 황O온', location:'거북섬 웨이브파크', image:'10/10_29.png'},
+  ],
+  '11': [
+    {student:'21101 권O리', location:'거북섬 웨이브파크', image:'11/11_01.png'},
+    {student:'21102 권O아', location:'갯골생태공원', image:'11/11_02.png'},
+    {student:'21103 김O은', location:'오이도 빨간등대', image:'11/11_03.png'},
+    {student:'21104 김O은', location:'거북섬 웨이브파크', image:'11/11_04.png'},
+    {student:'21105 김O열', location:'시흥신세계프리미엄아울렛', image:'11/11_05.png'},
+    {student:'21106 김O현', location:'오이도 빨간등대', image:'11/11_06.png'},
+    {student:'21107 김O우', location:'야구장', image:'11/11_07.png'},
+    {student:'21108 김O태', location:'거북섬 어린왕자', image:'11/11_08.png'},
+    {student:'21109 문O희', location:'물왕호수', image:'11/11_09.png'},
+    {student:'21110 박O은', location:'오이도 빨간등대', image:'11/11_10.png'},
+    {student:'21111 박O준', location:'시흥신세계프리미엄아울렛', image:'11/11_11.png'},
+    {student:'21113 방O준', location:'갯골생태공원', image:'11/11_14.png'},
+    {student:'21114 선O솔', location:'물왕호수', image:'11/11_15.png'},
+    {student:'21115 심O우', location:'생명의 나무', image:'11/11_16.png'},
+    {student:'21116 유O윤', location:'거북섬', image:'11/11_17.png'},
+    {student:'21117 윤O양', location:'갯골생태공원', image:'11/11_18.png'},
+    {student:'21118 이O우', location:'갯골생태공원', image:'11/11_19.png'},
+    {student:'21119 이O민', location:'오이도 빨간등대', image:'11/11_20.png'},
+    {student:'21120 장O율', location:'선사유적지', image:'11/11_21.png'},
+    {student:'21121 정O진', location:'생명공원', image:'11/11_13.png'},
+    {student:'21122 주O', location:'거북섬 아쿠아리움', image:'11/11_22.png'},
+    {student:'21123 최O영', location:'오이도의 단속', image:'11/11_23.png'},
+    {student:'21124 최O채', location:'관촉사 연꽃테마파크', image:'11/11_24.png'},
+    {student:'21125 최O원', location:'시흥신세계프리미엄아울렛', image:'11/11_25.png'},
+    {student:'21126 최O훈', location:'물왕호수', image:'11/11_26.png'},
+    {student:'21127 한O현', location:'갯골생태공원', image:'11/11_27.png'},
+    {student:'21128 한O', location:'오이도 빨간등대', image:'11/11_28.png'},
+    {student:'21129 허O', location:'오이도 빨간등대', image:'11/11_29.png'},
+    {student:'21130 홍O윤', location:'소래산 산림욕장', image:'11/11_30.png'},
+    {student:'21131 황O주', location:'선사유적지', image:'11/11_12.png'},
+  ],
+  '12': [
+    {student:'21201 구O라', location:'갯골생태공원', image:'12/12_01.png'},
+    {student:'21202 권O아', location:'생명공원', image:'12/12_02.png'},
+    {student:'21203 기O훈', location:'갯골생태공원', image:'12/12_03.png'},
+    {student:'21204 김O채', location:'갯골생태공원', image:'12/12_04.png'},
+    {student:'21205 김O성', location:'거북섬', image:'12/12_05.png'},
+    {student:'21206 김O안', location:'옥구공원', image:'12/12_06.png'},
+    {student:'21207 김O우', location:'갯골생태공원', image:'12/12_07.png'},
+    {student:'21208 김O늘', location:'오이도 빨간등대', image:'12/12_08.png'},
+    {student:'21209 김O림', location:'거북섬 웨이브파크', image:'12/12_09.png'},
+    {student:'21210 노O은', location:'한울공원', image:'12/12_10.png'},
+    {student:'21211 박O원', location:'갯골생태공원', image:'12/12_11.png'},
+    {student:'21212 박O후', location:'오이도 빨간등대', image:'12/12_13.png'},
+    {student:'21213 박O엘', location:'생금집', image:'12/12_14.png'},
+    {student:'21214 배O혁', location:'갯골생태공원', image:'12/12_15.png'},
+    {student:'21215 서O훈', location:'해로와 토로', image:'12/12_16.png'},
+    {student:'21216 서O림', location:'한울공원', image:'12/12_17.png'},
+    {student:'21217 송O우', location:'갯골생태공원', image:'12/12_18.png'},
+    {student:'21218 신O결', location:'옛 염전', image:'12/12_19.png'},
+    {student:'21219 신O주', location:'소래산', image:'12/12_20.png'},
+    {student:'21220 어O준', location:'갯골생태공원', image:'12/12_21.png'},
+    {student:'21221 엄O호', location:'갯골생태공원', image:'12/12_12.png'},
+    {student:'21222 이O희', location:'거북섬 어린왕자', image:'12/12_22.png'},
+    {student:'21223 이O진', location:'연꽃테마파크', image:'12/12_23.png'},
+    {student:'21224 이O서', location:'오이도 빨간등대', image:'12/12_24.png'},
+    {student:'21226 임O원', location:'갯골생태공원', image:'12/12_25.png'},
+    {student:'21227 임O율', location:'한울공원', image:'12/12_26.png'},
+    {student:'21228 정O환', location:'오이도 빨간등대', image:'12/12_27.png'},
+    {student:'21229 조O아', location:'관촉사 연꽃', image:'12/12_28.png'},
+    {student:'21230 채O린', location:'한울공원', image:'12/12_29.png'},
+    {student:'21231 최O우', location:'오이도 빨간등대', image:'12/12_30.png'},
+  ],
+  '13': [
+    {student:'21301 권O성', location:'생명공원', image:'13/13_01.png'},
+    {student:'21302 김O원', location:'오이도 빨간등대', image:'13/13_02.png'},
+    {student:'21303 김O윤', location:'생명의 나무', image:'13/13_03.png'},
+    {student:'21304 김O준', location:'미생의 다리', image:'13/13_04.png'},
+    {student:'21305 김O은', location:'미생의 다리', image:'13/13_05.png'},
+    {student:'21306 김O민', location:'관촉사 연꽃테마파크', image:'13/13_06.png'},
+    {student:'21307 김O담', location:'월곶포구', image:'13/13_07.png'},
+    {student:'21308 김O연', location:'옥구산', image:'13/13_08.png'},
+    {student:'21309 김O환', location:'해로와 토로', image:'13/13_09.png'},
+    {student:'21310 김O희', location:'미생의 다리', image:'13/13_10.png'},
+    {student:'21311 노O정', location:'OASIS 함상전망대', image:'13/13_11.png'},
+    {student:'21312 노O린', location:'소래산', image:'13/13_12.png'},
+    {student:'21313 문O건', location:'바다와 흔들전망대', image:'13/13_13.png'},
+    {student:'21314 성O은', location:'오이도 빨간등대', image:'13/13_14.png'},
+    {student:'21315 손O연', location:'생명공원 산책', image:'13/13_15.png'},
+    {student:'21316 신O우', location:'오이도박물관', image:'13/13_16.png'},
+    {student:'21317 신O', location:'거북섬', image:'13/13_17.png'},
+    {student:'21318 안O윤', location:'2층 빨간버스', image:'13/13_18.png'},
+    {student:'21319 이O빈', location:'미생의 다리', image:'13/13_19.png'},
+    {student:'21321 이O', location:'생명공원', image:'13/13_20.png'},
+    {student:'21322 정O희', location:'미생의 다리', image:'13/13_21.png'},
+    {student:'21323 조O준', location:'생명의 나무', image:'13/13_22.png'},
+    {student:'21324 지O빈', location:'한울공원', image:'13/13_23.png'},
+    {student:'21325 최O서', location:'미생의 다리', image:'13/13_24.png'},
+    {student:'21326 최O원', location:'오이도 빨간등대', image:'13/13_25.png'},
+    {student:'21327 테O', location:'갯골생태공원의 갯벌', image:'13/13_26.png'},
+    {student:'21328 한O빈', location:'갯골생태공원의 갯벌', image:'13/13_27.png'},
+    {student:'21329 한O주', location:'시흥신세계프리미엄아울렛', image:'13/13_28.png'},
+  ],
+  '14': [
+    {student:'21401 강O연', location:'시흥신세계프리미엄아울렛', image:'14/14_01.png'},
+    {student:'21402 금O혁', location:'시흥 지역', image:'14/14_02.png'},
+    {student:'21403 김O진', location:'시흥신세계프리미엄아울렛', image:'14/14_03.png'},
+    {student:'21404 김O연', location:'관촉사 연꽃테마파크', image:'14/14_04.png'},
+    {student:'21405 김O율', location:'시화호 전망대', image:'14/14_05.png'},
+    {student:'21406 박O원', location:'생명의 나무', image:'14/14_06.png'},
+    {student:'21407 박O완', location:'선사유적지', image:'14/14_07.png'},
+    {student:'21408 박O우', location:'오이도 빨간등대', image:'14/14_08.png'},
+    {student:'21409 방O은', location:'옥구산', image:'14/14_09.png'},
+    {student:'21410 서O지', location:'갯골생태공원', image:'14/14_10.png'},
+    {student:'21411 손O성', location:'오이도 빨간등대', image:'14/14_11.png'},
+    {student:'21412 신O희', location:'갯골생태공원', image:'14/14_12.png'},
+    {student:'21413 신O리', location:'갯골생태공원', image:'14/14_13.png'},
+    {student:'21414 안O율', location:'한울공원', image:'14/14_14.png'},
+    {student:'21415 오O린', location:'오이도 빨간등대', image:'14/14_15.png'},
+    {student:'21416 윤O', location:'오이도 빨간등대', image:'14/14_16.png'},
+    {student:'21417 윤O현', location:'연꽃테마파크', image:'14/14_17.png'},
+    {student:'21418 이O희', location:'생명공원', image:'14/14_18.png'},
+    {student:'21419 이O연', location:'선사유적지', image:'14/14_19.png'},
+    {student:'21420 이O수', location:'갯골생태공원', image:'14/14_20.png'},
+    {student:'21421 이O강', location:'OASIS 함상전망대', image:'14/14_21.png'},
+    {student:'21422 이O욱', location:'연꽃테마파크', image:'14/14_22.png'},
+    {student:'21423 이O욱', location:'소래산', image:'14/14_23.png'},
+    {student:'21424 이O희', location:'거북섬', image:'14/14_24.png'},
+    {student:'21425 전O용', location:'연꽃테마파크', image:'14/14_25.png'},
+    {student:'21426 정O원', location:'오이도 빨간등대', image:'14/14_26.png'},
+    {student:'21427 정O우', location:'시흥신세계프리미엄아울렛', image:'14/14_27.png'},
+    {student:'21428 조O현', location:'옥구공원', image:'14/14_28.png'},
+    {student:'21429 차O서', location:'갯골생태공원', image:'14/14_29.png'},
+    {student:'21430 최O채', location:'경관브릿지', image:'14/14_30.png'},
+    {student:'21431 한O준', location:'시흥신세계프리미엄아울렛', image:'14/14_31.png'},
+  ],
+};
+
+const flipbookData = {
+  '1': [
+    {team:'1조 Slowly', members:'김O민 김O후 이O현 이O환 정O균', link:'https://www.canva.com/design/DAHKQJqNvwg/BI-y1c1p_wP2ThTLpEi3NA/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_783%2Cw_1400&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Ff69900e6ead9c78c75f9974984c05e7c%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_TCjmlFaK94Elxagb_W-8uPkq2ABztguq1x5y2415jI-4YZOvA21KZ2JPMRKx8JiSOw6OmPoAwhYd3jGeddtjMbsBnKJ6QmgOozcCj5JzkzrA%3D%3D'},
+    {team:'2조 뽀롱뽀롱 시흥시', members:'남O은 박O우 신O진 최O우', link:'https://drive.google.com/file/d/1f4tntOvfZmZsoG0_uF6qFhgJiNAC7fYc/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_512%2Cw_912&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F07748f7225fdac21d3c8cd80b89f4d82%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_QObnsp2ZRKk0hcjhh0IWIVwy63impNxMqUg6buYMMBP_v5fzQRXL204jKWuWAX0J2Sb4TsQgrxTM4qZ37H6oQOLXcO_3A8OkW0GYEmI1ozpQ%3D%3D'},
+    {team:'3조 AMIR', members:'박O연 박O수 이O람 정O하', link:'https://www.canva.com/design/DAHI8Pl_Pcc/30SX3i2qeXl9emd1ZyL9aQ/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_787%2Cw_1400&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F2a5862a937e83dbab9f5167a4ceded58%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_QofV0WaRUhYY5voLE93_X6gFhaVcwosJ-mvBh5SIkigY0bJbEaCz4vpbKh3iYUe3tYMY_iVpBVJdmEx1tnIKInq2ui1MQoN2SOTrk4lJdjuQ%3D%3D'},
+    {team:'4조 추억이 머무는 풍경', members:'김O유 김O늘 오O민 이O영 임O린', link:'https://www.canva.com/design/DAHKQN2RLPk/yi3CVZ1MQJGGHwtTpNlqrQ/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_307%2Cw_413&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F209c4c071a4644734140aebd45c78056%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_SCKxl41ULWdO41aWvGtZ6OuGVgahNLhX6GVeCic35cOyHthyG8yoP9_i28hEl7JOLBHKXQti5y2GdM3Sr5RpfnzzCed0E5dhPBVDoIUc7Udg%3D%3D'},
+    {team:'5조 풍경을 담다', members:'김O훈 김O열 김O도 김O은 최O원', link:'https://www.canva.com/design/DAHKQFSVxgM/Jpu4bumlPZgvdBOyKv-Jbw/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_917%2Cw_896&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Ff801f8290bec532caad773c7a45cbf6b%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_RXEnUXEJtZn9-wu97aOwBUS3Vg3ASK0A1jk_a8vMvi8A5ILw651eIPPNF_Mamvxk3KZYJbLgxxiQ0qUA9fr3t7Kyt1Z7aqAwqy5I9uGDUaCQ%3D%3D'},
+    {team:'6조 바다 한 조각 스튜디오', members:'심O율 염O혁 장O윤 진O원 허O준', link:'https://drive.google.com/file/d/1Pr5fA45ALyDUOkzG55k3rytGUDsKZqBS/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_508%2Cw_912&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F009028108add238a727196805a7ee373%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_TOhjoyWjkwaGMzYhLC4gZYXH-1rwgrSITjK1iRFG7f6YLNVuetWt1ym_BJUncW93XUzGBGjKciyzSufel9dkLgAUMcyRZk8IgBme_nbRcu5Q%3D%3D'},
+  ],
+  '2': [
+    {team:'1조 시흥 한바퀴', members:'강O양 김O건 박O은 이O리 최O완', link:'https://drive.google.com/file/d/1XtjcNSfqmNfZetHrty5nOsmN3QaGmvPV/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_555%2Cw_983&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fb0ab73dab625938e176bc580e424974d%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_Sr1x2EotWxcm31eUth00aN7bBs49AFUUfOECi36_YrMuSnuGUlVFZxa3VjVeyjZU1bnMN8IftieauNeTC9uU95x07X2HW04jqmX4VHuOH5lw%3D%3D'},
+    {team:'2조 푸른등대 탐험하기', members:'김O은 김O은 노O윤 정O찬 고O석', link:'https://www.canva.com/design/DAHKWvqL_wo/2kIhb5MZA3DvRTEI_HfdBQ/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_788%2Cw_1400&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fbd560f84a216ba8b72c10d5e7b7a5478%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_QMqRDrQx98Q-95TShJlY9jURaOBwDrlgvkG1uABdztqbwSyPNxgCkvTkVs5k7SJFI-UditJTEq6iDdsp3ekPGjrqyFCnha2-rrQOSPU5CH6A%3D%3D'},
+    {team:'3조 Siheung On', members:'노O학 박O빈 조O우', link:'https://drive.google.com/file/d/1DEk4PpobaThbAFyaDDJBUcQuWzuetYGM/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_587%2Cw_1046&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fdbe711a6132d9674eff5de6654adc6d5%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_Q8bz-JAXOTU_owfDsVJs7Z-RVmIcrHvykIRLlDfxEFPEQoSHEqhbeq1h5VoOq2OCws-WEBlU2_5yepj3F3k--Q9MXW-bMezTt3fgeQMUQs9Q%3D%3D'},
+    {team:'4조 시흥 관광지 소개합니다', members:'김O우 김O원 조O인 오O혁 이O현', link:'https://drive.google.com/file/d/1M65t2mMn_Cz3_siPUy0oE009R0jatjfz/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_451%2Cw_812&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fb18d352d732302661dfd662904f084a6%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_T2dN_HkuC3aDew-9rRGyeAAJc-W5OUUdK629BNeN8qqEbRBbFVDzcizPpdJWAkLLcvPHQxTJhG8VEPInb5qbEes4VUWh8HKmIxIjEqH-rzyg%3D%3D'},
+    {team:'5조 해담숲', members:'김O현 김O재 김O후 심O혁 우O겸 이O원', link:'https://drive.google.com/file/d/1ZCUygzqcqBK-oGM3bfzJY9WOwOl33rb7/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_483%2Cw_863&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F1621a2553f302da9e4489672b435b565%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_R7NcV7iuJuHmkfXgR4ctwnhsRV7MT838fJU1L0UUIpE2XhZyQKxnVjvLCjHp333rNHt90zeG0R6r0Mj0CdOPInwi_yOEbeARsbACz13QwArg%3D%3D'},
+    {team:'6조 LUMO(빛)', members:'강O원 윤O상 이O설 이O석 이O원', link:'https://drive.google.com/file/d/1MYsY0-0ukao-DnlqtoLKW1ONJ5D_7iSp/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_512%2Cw_922&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fb2963c6802ac10bb7fb834ac3a0b195e%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_TN3hcFHqwCZ-jk18pVSimvkzCeKBG7ymiag40N7BdZlHldJduN3SUaLqHQfKQ5ioo4PwIQDc7KRbVs9LC8K814jAMFw7VWVfzMU6Wq51rLCg%3D%3D'},
+  ],
+  '3': [
+    {team:'1조 시흥 NEXT', members:'김O연 김O하 김O율 나O서 우O훈', link:'https://drive.google.com/file/d/1dQgFAm5oOBiPKinYFEArIr4hg3MwdbDw/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_516%2Cw_917&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fb9eac665d7a6118e5a916042fb074b85%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_T-yx_42uN0itlCSp4pbaWyfsmXdbUfaq0AdifgEBySH42oxlncjN791BctVS-fh2u1yALwqL4680KeTUs6bnVQsOo5GA-TaK2x377tQYW6Nw%3D%3D'},
+    {team:'2조 풍경맛집 오이도', members:'김O찬 김O찬 오O원 이O제 이O이', link:'https://drive.google.com/file/d/17pND6eYnhtGqkImH-oMqecyOKFgLMeOQ/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_516%2Cw_917&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F05d01d7f1f288024d8130f7d97e092d3%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_STFpoR4BAl4Zcx_HDQ5vAyuiwbK2SYDhSzsHdun6j46jI20SeOZQBENo0nNztuAXPnSxlG3IBLQ-jK_xofWNW5rz0W-RLOsAVF4BZSIA2yHg%3D%3D'},
+    {team:'3조 SEA : 봐', members:'김O윤 서O윤 송O령 이O하 장O원 정O연', link:'https://drive.google.com/file/d/1nQ5u92JAbfn9kU8k5W9iimb2N3zXQ1qJ/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_516%2Cw_922&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F9099fa53a8edba0bb3ed7cb2a29cd253%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_TLfvjGXNNf1kXLG4TVhUmfw0-qz1YfRf-0UbCusM2nM2k5n3e3vIVFOjlc2-Y8c99GTKI_NQrJOF6TfB7e-KhqZJly0drtnv209u2PeRXk2w%3D%3D'},
+    {team:'4조 GREEN TRIP', members:'김O예 연O율 조O욱 진O환 함O연', link:'https://drive.google.com/file/d/18E0vJlPrREe4JJIOi3BcofVFPQCsjNnB/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_522%2Cw_922&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fa7a2d2efa2dd0867afc53625a4d49258%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_QhdaTvECCW5xpD8GvuXDueKq-yBOBON-9UbSLyelbehspFLcjTXBobZqpltjmLxW6OeoYUG82COsBvuR-WM1a_WTGRrkz1hY0r_muiVO1H6w%3D%3D'},
+    {team:'5조 시박이들', members:'강O찬 김O민 이O우 임O온 하O록', link:'https://drive.google.com/file/d/1KKVbuPqZVmI5fIL_NboqH4VZSZES7Mid/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_511%2Cw_922&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F080cccda879762b98623c05fcd3ad2c1%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_QPKBvnLF1WgpitGIUFft-0TpHER3KRezYqpN7vASG8smALw25hyOstia1c-PyN4-NZ_DgZw1BD2rMrwvdp5D0eF9o01XHJU-STNZYk6wvvFA%3D%3D'},
+    {team:'6조 오이도 선셋', members:'마O 민O빈 장O채 최O윤 박O우', link:'https://drive.google.com/file/d/1bPYkQpFU1eIzeagtE6ivsiXRXX7oX9bp/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_517%2Cw_927&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F38b5e048c19aa9811a41466b7550ac26%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_Taj-ZyAsGigGBoPxvLk2BbkZA0yI_8qHENJ42PFMffvl-aO4_PAaZFjsFNrAzrht_PP_5RxuRasdwr62KcDN4b8fEkXlhs8r6GNmzgdp-zkA%3D%3D'},
+  ],
+  '4': [
+    {team:'1조 SIHEUNG FOREST', members:'김O중 박O율 손O영 송O민', link:'https://drive.google.com/file/d/1Qei7UvbQ-QMiR77by4zEnGqczREGBuNs/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_517%2Cw_917&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F38bd2e21e72eab4bee8d690e9c424a94%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_SYpcWpt-mruXgxf6C9Z1bybhbNv3XqHDJn_5ThR02adroV0qlLvzEFJJNJuh37xF_nJcrx2prOV8xq6f295F2QFHI-TTXCbhYw7EggKyThGg%3D%3D'},
+    {team:'2조 SPONGE BOB', members:'박O호 박O인 유O환 윤O영 정O재', link:'https://www.canva.com/design/DAHKRS2rBsY/MT8My02wi7hKIzE2PD2DAQ/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_790%2Cw_1400&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F3482d30fba3673872122ac05d56e519f%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_Soz52R1iWM72vkECDSWOtaNcPlDaes-I9qpDNoaMqNRzuo5N_wlEQdk0QW02C7EDh1A4v0xQCjmTZ6g1NZyRkT0SoswAd-fpA44BUCiOTQXg%3D%3D'},
+    {team:'3조 선사랜드', members:'김O호 김O준 박O혁 정O욱', link:'https://www.canva.com/design/DAHKRoq3czM/QPy6le2kRQv4rbY2rNC0mg/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_702%2Cw_1247&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fb3cde3d76a87bd2501c5286dcbb15eba%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_RCTyLKay0ODnSNvEJAdO6uCmSXC2vXTG6v2_a16by_sTqRzvikzYLZYprKXyFlUPGC0aiELglVb8lD6xqGN8ZGrk_5hnHMXKSxowe3Xrmuiw%3D%3D'},
+    {team:'4조 Festa U', members:'김O아 박O윤 이O애 이O제 정O민 최O진', link:'https://drive.google.com/file/d/1jnDX2bPdMZmyiaE1cW44iR-dhiXNiGDA/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_517%2Cw_923&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F4ff067637f21ae4c8756140805bfc3f7%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_SsGprWiNzVylJvnYQ9vp47eXoJKguAntmVvOoy2mX4s8rCrsvubaCDqOnYx47qSFzA7I-s1TOau9FaRlMH_lL5WtDQjkAfurDGZwMGQNrVBw%3D%3D'},
+    {team:'5조 밀물썰물 소개서', members:'신O한 이O솔 이O찬 이O서 이O은', link:'https://drive.google.com/file/d/175FwwjO03_H-C7FIyL8TvJOhMJNTvoEh/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_477%2Cw_916&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fc4e3d6bd27e10b78deda217c14a8fbbf%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_QfDeyGVgCB6KV7mKOlUOAjqmn7-fwBBVLZYd1GTMjjXPH00eShkebv4NOUIjNK9ubJP-y1IeLEcnmhTVNro3958g7Z6Dl4Cpjs6TD8Shou6A%3D%3D'},
+  ],
+  '5': [
+    {team:'1조 해안', members:'박O안 서O은 윤O현 이O준 황O유', link:'https://drive.google.com/file/d/1wFcPz7n40gyA61R-PXiP7XsEE14QLfzC/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_511%2Cw_926&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Ffa83a42f6731d88b59db9e06478e4fe1%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_Tje-2CHh1eHpy9TdpTOUgVeDlRwhe5fFg7OOci8sphNwvTFqL0kBDxLKkMr3NerwpzzqGHQBrOBaLmAHJzVCnKWYXLpmZyd8ngAjlTvsu0Ww%3D%3D'},
+    {team:'2조 Moment Slice', members:'김O연 김O후 송O석 정O서 천O윤', link:'https://drive.google.com/file/d/1CTsfCC4EdKEpNwxWeZsDSa78saWwdfUG/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_516%2Cw_923&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F36448796b6433ecd62c572bb9edc4276%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_Q2Q7jLw_RCm0_ElzXBMr3qG2bID4-OEufdEayg89JnCq6TY03Abmb2j7FLjCDlJnb20hqbq-D-pjMOwuLA6QTINeAtbHlkVeObob01F3DACA%3D%3D'},
+    {team:'3조 신도시에 스며든 자연', members:'권O휘 김O헌 박O휘 신O준 정O윤', link:'https://www.canva.com/design/DAHJUeD6i7A/DVrPZfzV0Si_J1CCCiYHxg/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_668%2Cw_1181&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fce363156e03d5fa7671f4ffdfdf6a789%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_SxSGUhYhiiHCm_ceB7YpGIOcM3IpX1L0v8x0fo5qcqWwTJr0XO5Jqnr_8lIs0wninGyHoNW_SxJJyow1strB2ux41x9tn9Pj4XWGim95l7Ig%3D%3D'},
+    {team:'4조 APEX', members:'강O호 구O현 박O은 박O승 최O현', link:'https://drive.google.com/file/d/1r3s7-AsNJq_-1hoW7WGGofwb7zKLttdo/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_517%2Cw_923&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F495044456a3ef1bf863aaf98cc9e8f95%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_QPqmm3JnVY4z55B7q5TPKe9M2ndGMa4ci8ZXdrCH9G3yJFIWcRz-VmRLuazBqIA0b0KRbIshsnSSZJrjG9LQoSjq99Wzn6gtj_YWjfBS5ySA%3D%3D'},
+    {team:'5조 SIHEUNG FRIENDS', members:'김O진 노O호 서O우 윤O현 조O현', link:'https://drive.google.com/file/d/1rleCFduTeGu2f3p6aCJ8jBIDGKunnXna/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_520%2Cw_918&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F39eda1e70cca92eec6e56196f50d65fe%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_TRFDfGGsAbcu0kXfQziSXVfwNGeIRHDbOU9sRXfnD0oZg7a4WQgui0NQwCFA6rOXNYNxcOalh8cdc4zzhOOz1YPHbJ-xASMcTP3wNviq5BPg%3D%3D'},
+    {team:'6조 웨이브 파크', members:'오O린 우O완 이O혜 임O환 전O진', link:'https://drive.google.com/file/d/1uxVwaJBPk3QgcgtQj35-RCbrKULGcxsC/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_515%2Cw_922&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fc7a3450b0806559cdc5df74f3a6c8acf%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_SwrGeKIJSolfNZ4n9ttKeU0kr9teHCIUS-Fsz66hHGWBQ5_PlpEspTK-HsTVXKQdtyRfyrFyHfd5svO6ZJmcXWZKKfVOMUeBuFHnWGlZI9Fw%3D%3D'},
+  ],
+  '6': [
+    {team:'1조 여행이 가고 싶.다.', members:'이O준 이O린 조O희 천O호 천O주', link:'https://www.canva.com/design/DAHJgN-4uZg/ziHPXVn6ircf4qHqmOaIQQ/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_522%2Cw_932&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fd297839864baa7051811c55a5c9ec44c%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_S5AQVCqEj8MR_-phJ2D2acSQoHic3Ws4Jz9aIH7LFm9hc-Qz-nU6-Bp2RP5f98ETPu_7PJdg0rfjPoMZTiWzPRLGEWFI3eRvpYsM2H7rGSEw%3D%3D'},
+    {team:'2조 루멘', members:'이O찬 이O우 이O서 최O호 홍O율', link:'https://drive.google.com/file/d/1eKwfShOjs8_7TiFAgceSpMMsvQpIVynJ/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_465%2Cw_650&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fae161c7d8fd8bbc9b962353f9da8fc6c%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_TUl6ip85mzbkEeAFelB6xN9cCSekfCtSHqmLrQKCmORMiIZCGUUZJoBUXqlYgG6wA-4MhFNsgwi1mHKPhRH6h51tnVF7hHmnIqoMDG6mveDQ%3D%3D'},
+    {team:'3조 시흥 해리티즈', members:'김O윤 배O랑 서O준 양O우 안O재', link:'https://www.canva.com/design/DAHJgKOGkJs/7b6kpck3od271Xckh-2FbA/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_632%2Cw_926&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F1d509f9d3a681f7bc191e6cf9f89fc3e%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_SBCRaXNjVhU6vb7HmLMejHdG60CeqOtrUwD01jRnJec3npGXz9GogT6aaKxD2QnZBHLxkIQVy6rdVJ4xYlMVAxKULOEM4yGekeY-dsOrV_5w%3D%3D'},
+    {team:'4조 Ecorium', members:'양O양 윤O균 이O건 황O윤', link:'https://drive.google.com/file/d/1-HbR7VwbAifV_7eWYsKiGrxyKxosuKxT/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_516%2Cw_916&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F5b1d7d510ad1e10f214b9f42d447190b%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_SqFNgXSP-3R3YObs-AxKu8T0F1MbzYsUs5nO4bGO6XZc4PIX3jmyHnXSBQnf4cbhyQVJgqH6AWtlK5tyLFIUjhv5SAyjSoKK1GxejoBX8KWw%3D%3D'},
+    {team:'5조 시흥나루', members:'강O민 강O아 권O영 김O율 나O희', link:'https://drive.google.com/file/d/1nCYkEUPIOvRwp1sMuaQckF_H4KQBOQ6Z/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_642%2Cw_1220&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Ffaea51001ae2f51c1dfbc6d1da52d6ca%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_T_fSOcsneiIkqZrKzsDC14Vr7p6WjQUhNze_sEyJTGYpYrVBDaFdk4fmvv29NvdYwSlhHBHfgOvYU9cFfkTGQl3pxVZNFTqpGG417ZEvox8w%3D%3D'},
+    {team:'6조 내 손안의 시흥', members:'김O민 김O윤 박O현 박O혜 박O아', link:'https://drive.google.com/file/d/1eMjQXzZbv_tf5wmi5t_cwyscMLJt0qpf/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_502%2Cw_917&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fc5122ec5a7467d80a6489b60f2bb5bef%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_Rr5DdHOjmioRuRf8z1FZNIfHbiFy1HxKcbBUEjpUJqtp1otyvz14uAQPiSCydwq-irYT9_fWbXWWuocBI9Zlz6JJxD4j5EY1pVWz9Er_XzAQ%3D%3D'},
+  ],
+  '7': [
+    {team:'1조 우리는, 로컬 에디터', members:'김O민 김O건 남O연 최O아 최O안', link:'https://drive.google.com/file/d/1s_ieji8aLAYkjcNH3VTEwPMCS8z006kI/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_516%2Cw_920&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Ff0e76356039332de25a9f36e1e66cc6a%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_Sp9FVHEtU_0h0aexvWqZv3EJmuW0WAm2fh5c3S19wDralD9LmhFGNBZEG_H1fGawmOV-RinbQ5TJ3u7pAau81w8VYGIRtk24sxe2SF094B5A%3D%3D'},
+    {team:'2조 해로와 토로가 함께하는 서핑', members:'권O율 김O현 김O양 우O규 정O윤', link:'https://drive.google.com/file/d/1ldMb_sGS9X22rAMEyGUANa_P6fAnwHP7/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_522%2Cw_922&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F8f31b5dc1c3d1ca3d9e969e71da9f1dd%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_RabPnXz6OBq15R2_Fqx_JdeSL5zvY3peqwsMzMZrhx4durD6xkstDJ6E9_T1mwGbC63YOYqn1ioZxon8DkOp63UBGSEJzEYbZYNU_TIKVoRg%3D%3D'},
+    {team:'3조 등산했산', members:'김O연 남O민 임O유 정O아 조O현', link:'https://www.canva.com/design/DAHKWM9RkP8/8tF5tupfuK8EKlNkzuVXZQ/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_692%2Cw_973&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F8f67af50479adf1b6c152e060b86197c%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_RxdVBIePCyr4aS21yd0QyX8XpRNe2KAB7xRp80PrOX1edhW8YXLlZGxcVrY9QdKfuvXb3E5KvGBz3Qfb-zC0XxZzxa6T5SNG_KLeEefynv4w%3D%3D'},
+    {team:'4조 모아나', members:'김O진 박O현 장O안 조O진', link:'https://drive.google.com/file/d/1hrSPd3GyMhMtaGg9xzbWAqcA-pmvAMpk/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_516%2Cw_921&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F128c680a8309aea461b2c852c96d55ab%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_Q6_m4gp9hBPamz7bbgio9YoiWugWhb1iXMrXZmTfZw5L8iJWXyIIS5bIknCpj9TzR2qxKV-a5oSuZVe5AcNRiw9FLqa-yccP7Cr0ugIdJQqg%3D%3D'},
+    {team:'5조 등대팡', members:'김O엘 박O연 박O윤 이O건 이O주', link:'https://drive.google.com/file/d/1ZfE1mBJJ4DAArEkVE5itPNoQGG3B_ktm/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_520%2Cw_922&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F392f36b0d217cbdb3ddfa19db1821f64%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_QD5UnpRxgubvHzpgWwzSvPEFZk1_qKr-yXdXs4glb0yTkoBJ2wiQQLb2wKXVHAiqCwukgUeqs3NMNqLIDHI0jf0712Pje1fLeFUDbhHTU8WA%3D%3D'},
+    {team:'6조 오이도의 기념품 설명', members:'고O연 김O엽 서O완 안O진 정O연', link:'https://www.canva.com/design/DAHKWETxICc/KUf-DlpDrc5v12zQM6GW1g/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_667%2Cw_1182&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F95006eb1d9136d079ddf388a5e5b53c4%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_S5mdrAxNuHZSjA8T0367cDOWTzfA4o0yx4oP7S5Jk9xq7QQRaRxniuKVNXiKCmlZJMCndI4ABI58uA5WFS5eoHJybvLufOxucmnwXnOVT-Mg%3D%3D'},
+  ],
+  '8': [
+    {team:'1조 등대로드', members:'박O형 오O담 이O인 이O윤 최O연', link:'https://www.canva.com/design/DAHJavPjC20/eotpeVNU5IjExDNRn4g7Uw/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_788%2Cw_1400&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fd1a43078ed9abb9141801ea6579d8a51%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_S5ujTzibuxxuWjQgIQczJkkelZP3WzACcI8KMrMqo4bBazDZrF9NVQTfpJQ4PZminymNFoTlSWI69U2KT_nfulQ47bnAsksUxYZT656HoyBw%3D%3D'},
+    {team:'2조 Si : send', members:'김O연 김O율 류O연 조O진', link:'https://drive.google.com/file/d/1qQYvkTIduOguT6ScVtvQisTffvcS37RA/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_642%2Cw_912&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F3cb7bd98e606be5f4aa35c2ba140cf2f%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_Q9AinusneKJYHI_4nD6l3PpKLu7PBCIj6EqHF9J22RIFbyNiLelCYGd_UzKtEd6MtFoOU148BzrwYf_0VxmkaeXXkBl0_6de5i7DDO0qUYMw%3D%3D'},
+    {team:'3조 오색오이도', members:'남O우 박O준 박O원 박O서 하O서', link:'https://drive.google.com/file/d/1dPEv9_VLvgidbo61busHQ5n0U77EHn4I/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_511%2Cw_917&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fc2f3fa515c6fa74a4d25ec4a8cb482dd%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_QspCUVODWZXmEhFumngiD8YBlTGneAHIY7RilEqXis6fM5GwbgIakLlAbv-YDLDF_RdwfEtpN6Rtbum5zFM1kJevr1qFJRZw4HE_km8CjmFw%3D%3D'},
+    {team:'4조 바다가 품은 특별한 기념품', members:'김O우 김O울 소O우 천O현 최O혁', link:'https://drive.google.com/file/d/1tBBNwMFgUjkwDhTb-frbXTBMmPHKaJ3G/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_516%2Cw_918&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fd290d6af84294cde4be8f1fe1dc4aee7%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_RqSEUyDd1uIc3XyAAH-Y4xUGJ7aGew4f_32pURv0lWXQhxdfpk3DlLNwyHF_lCL1ZKJYJ6v7u7OH24FguqTnmFVcfINBZ7zOfOFZQBVlXsJw%3D%3D'},
+    {team:'5조 로컬러', members:'김O연 위O영 윤O우 장O람 정O후', link:'https://drive.google.com/file/d/18_Ckm48sFlGgD2xV2EqtXvZal13tynEg/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_518%2Cw_918&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F7a364276368ce7a408946cb7d281a557%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_SkrJDXny3u-CBkv3cK-b0vsUi7-QO0EuLn95KxGNyqCg5C-Rg99lfFHsHTSwHdBpZkfCeEE6iQEm67-mMv6YFm732N2tXQYdINcR5NQZVEPw%3D%3D'},
+    {team:'6조 더 시흥', members:'권O 유O안 이O영 임O율', link:'https://drive.google.com/file/d/1t1l3aLWFgFKdZplxv7eiR-ps31ZFZxFh/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_523%2Cw_920&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F3100dc74092318be4925d2a8aa41d6d4%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_TJI4vVGBRfQ71IeqapdNEe4oesOdcSaPP3qgB1hzmt9rWvhCvbDQADND40txLdYbPnM1UdOYdTSL-EQ3ufGqL2shIdoxLi-qmEMBvQod7cvQ%3D%3D'},
+  ],
+  '9': [
+    {team:'1조 파이브파크', members:'김O욱 김O은 박O연 유O화 홍O린', link:'https://drive.google.com/file/d/1cfB-k8QfIuXgY-a3qMqusCYs7hKMp3ci/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_515%2Cw_920&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fbd6d82db382c5a7c4ab74b1144479b7f%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_Qt1pUlTnQSSxEx9LGh0rlF490diOO8z5tdiPdA9XuWjbxJhHOKultaom_dyf6xeXFxhZLEbUP6u-_cPRYvJy4z9TYYTVRi67aSn8KG8-Tl9w%3D%3D'},
+    {team:'2조 SEA PEARL', members:'서O우 서O린 여O온 정O우 허O원', link:'https://drive.google.com/file/d/12x57nuNH2qbgk1vO9orO7M_fxkd44Qvw/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_527%2Cw_917&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Ffbd90740626507f993db7980a30cc56d%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_QwwrT26pVGSN98f7Rm5BFAeGJDXE8oU2XVhHJFJ_v9Gim0rFJ0mJwodgEXODm54QtaFE8EVzRC16pQRwhoriJrslSmJVfXla-uHZfAf5N-uA%3D%3D'},
+    {team:'3조 S : Sky', members:'김O겸 김O완 남O아 박O연 조O연', link:'https://drive.google.com/file/d/1FJH6maj2oVze2r1veRaVT6hh_ULFXAq2/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_765%2Cw_912&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fc467dda2c1e6a1c9a40c202dbe7df28c%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_QzXEkrT9sXEeU2CZnZSw3PzMMqEpbKPPaJ8G7GEgUS1YjKXxLoaTS3NpF-RC8UYWA8l3BfbMR2qakhpym6DzeHvNknQaPxqUGB4QuDCCEvRQ%3D%3D'},
+    {team:'4조 시흥랜드마크', members:'박O준 서O영 전O재 한O호', link:'https://drive.google.com/file/d/1Hh0N4210ACva98ZGMdvFPTG-I_lToyl4/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_470%2Cw_830&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F1f29abd8445020f6cfe45892a34f4935%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_Sm9Pav8mpkEnEUBs5O7PD99ujFZVbGveM2z31l9VfWecIrE3AU1v2sTK3rQKB0nQgo4CzzE2XUqCBnhDYghFRT8NLs2kjbOOzZz0DKeisRJQ%3D%3D'},
+    {team:'5조 등대바람', members:'김O태 김O희 박O원 이O원 최O민', link:'https://www.canva.com/design/DAHJ_HfzW4A/0UzbeeunT918wXvb4BSPoA/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_700%2Cw_1242&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fdbf1e832503dbb3d9e6c2a4cfaa4d119%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_RF4TZ6jBX0s37vfy_teHo6A1mjS2fFYI1Xw2XF_3q0PlalIoagBTvV1krZbttd_uWjXl2O8pMKFoWpieFsgeI4z2ujx6MgHFj4cqxLw1L90Q%3D%3D'},
+    {team:'6조 오이도역 마그넷', members:'김O아 오O율 윤O산 임O주 전O민', link:'https://drive.google.com/file/d/1LvB5_ao_gX5CT4-kxRlcp5NbBU2apP9l/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_546%2Cw_915&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F2b2556475d4d27f52f7b5cff9eadaac5%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_Tp-tySIe31IDOcws_YGah-GQbJTM_nSGXXu3iQICGGLVxaw7Uv1h1WUuYn_nGCZnlHxfv_-LOWgBwMWOiR2lCPXmtlowWmNAqin2lJh6meng%3D%3D'},
+  ],
+  '10': [
+    {team:'1조 연두스케치', members:'김O서 김O형 윤O빈 조O원 최O형', link:'https://drive.google.com/file/d/1wzgbul3zwvku0Hr9VEaVtXqoQ1wxeUrp/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_517%2Cw_913&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fc6e0bd80974cfc350d04334bd2e20cdf%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_Rcug0n8jTG6smspNYerBksxMh1wduMEVtyYG9toY9skdtU6sCi8aN82ge-k-AaY9k4hfMan-Ef0CsGBOO5SV-dCCseiQ68EzeKCsKV1UhDHQ%3D%3D'},
+    {team:'2조 여름 한 스쿱 시흥', members:'김O원 박O찬 장O음 이O진 최O승', link:'https://drive.google.com/file/d/14NwjeMyqMF0_IfH0pOb0IT5lePSQ46SI/preview', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_517%2Cw_912&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F9ff15a46898a0f90a8213b85d1c66377%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_SFwuWkLu5igE9wCkVxmbApu7RMWwPV5x8rijSvjbL9HGJ5qSpjaeb7Vw1j-WDhtUvkj20yKJZdplUAKs_ZZ5OuyUAdx9RYPT_D6q30QsqZFA%3D%3D'},
+    {team:'3조 여름이야기', members:'김O진 이O은 이O아 조O현 황O온', link:'https://www.canva.com/design/DAHJhAay7Jg/F5KYZPJ-IkJUQkhSYu0U6Q/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_795%2Cw_1400&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F81cd4fc1764b783aefdf615437612e13%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_SRW7bpRLTs3SloP6LdoCH2XritHvfpwyx01c6ph_wSmiShRygdsImi6gvqyOI1T5V83LjvMdqzD7l1mw0g0n3A1tYbyNlq9r6VbthilAWFGg%3D%3D'},
+    {team:'4조 시흥 왔흥', members:'김O완 윤O성 이O준 이O율 이O빈', link:'https://www.canva.com/design/DAHJhUju1bM/-2cQmJwTqxrbEXbUe1RB1Q/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_785%2Cw_1400&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F1a83e6311899850262cbaedd4eb9e23b%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_Rulp7Dw6JwpNLVLQMb5qVWF92jwLhFlR1mhqLEmIc9gxg28O69YXvulbWMSxCjEIlfg3Us1L5NyAbm4Fk0DC0ClUd-RVzTuKXaLDhc25kloA%3D%3D'},
+    {team:'5조 시흥해담', members:'김O안 이O찬 이O우 최O원', link:'https://www.canva.com/design/DAHI3Wy45Hc/Ht1uJSWOZCP7MHImFRBXoQ/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_784%2Cw_1400&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F424a8c1bb3573b0fe9016a111f95d813%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_QgHElZrfXOl1Bx4H8dtCZa7m438HMgvfZdOHJ6ZrwiZlX8EmglXYm-0udh3vE77UNsWyF_97xf9XXahxXiZI_XNvzwxqKONM2p0Q79F4qoHw%3D%3D'},
+    {team:'6조 터틀피스', members:'김O형 박O원 박O람 전O용 정O인', link:'https://www.canva.com/design/DAHJhbQvqVA/ilYoYXqjsS2OAGNAVKr3wA/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_758%2Cw_1348&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F938eaaa6525ebcad8d51998b5cd3c672%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_STmbU3ItS4IqcLaJHlFEGsaQXSEqHdyjXvkwyjZZZS4FyKvH-E3HUmuFeZcOnRRoIYG0RSVrk_cNvvAtTNnwjbhKZHRFMmVGsx4wNaG2mafw%3D%3D'},
+  ],
+  '11': [
+    {team:'1조 맛깔나는 퀴-즈쑈!', members:'권O리 유O윤 심O우 최O영 최O채', link:'https://www.canva.com/design/DAHI3TjMVYo/FGJghledlHMzh-yCsbmZXg/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_448%2Cw_798&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F5683ed27aaf7d848d1b6c32eedd74b97%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_R4B4lAIxkGzfVghmREp13WSorYW3Pvyn0gET0npHHH_U6hoJjGQzNRDrvbV-XFW2oYZ2-JuKEpCBH-HTHY3JSr_-JBry-ed0AerY93xkBeaQ%3D%3D'},
+    {team:'2조 시흥의 관광품', members:'김O은 김O우 김O태 정O진 허O', link:'https://www.canva.com/design/DAHJhMQdB6I/BthJ7Nfl1kGmLr0dQmr5IA/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_447%2Cw_796&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F3646cfe100d03b7da1b40fc7b89ad607%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_SscOYEIqKFyBAb1e3z2YDC-hcHpxr7PqHoyPDrZ2S8wzXALivMj0d_dBwK2T65i5e3Gwa4UU4h5aYSZvb8SrsV-MB_zALXJUGEWbANtLpO7w%3D%3D'},
+    {team:'3조 프롬폰트 환경 작품', members:'권O아 김O열 박O준 주O 최O원', link:'https://www.canva.com/design/DAHI3rw5FhU/i4WL0kjXcWJ2voP1MsBSHw/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_446%2Cw_793&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fdd9a7036f3b78f816b2b4e00300d8a37%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_T9P6UrVec-idHpYdDSwCJT_Vzd_HMfKQtUj9cySl3AFMdY4zMLM5y3Xwd1QQgq4D2FwwSmP-mihbKmZcwnfbe6oNAiczU78DsFryuYH3TRUA%3D%3D'},
+    {team:'4조 시흥시의 물의 아름다움', members:'김O현 선O솔 장O율 윤O양 최O훈', link:'https://www.canva.com/design/DAHINQq14qk/o-PJggSEdTebvgvarf1hyQ/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_446%2Cw_791&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F5f02da175f93d043199119b0bf21946e%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_SSpuKl2A8ox6u3aPNPkZ3FeslSGKMQFmLfEDOiC-XetNFLCIaNIQ8Z8DCvTjei3LvT7t6BrxD1KvEzTxUdbU2UuQzku6fVq-GpuL00SHQKaQ%3D%3D'},
+    {team:'5조 토킹톰 플로깅런', members:'김O은 방O준 한O현 한O 황O주', link:'https://www.canva.com/design/DAHINTm1OKE/EIqr0MqniZSXagXq18ouog/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_447%2Cw_795&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fbfe0f4bf293d014b5e5606ff73b05dd1%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_SAK59KGDu9xCqbLJiJ3TVck5_pLAmvVMS1IKaqvyxPZgP6gf4RLlBrCm8LPonSRzIojF3aEtFOaXzmC9zdCofrB63PLl8AvCOla-jqnnf1qw%3D%3D'},
+    {team:'6조 시흥의 자연 명소 기념품', members:'문O희 박O은 이O우 이O민 홍O윤', link:'https://www.canva.com/design/DAHI3cC4CkM/51Zn6X7C39ZAJWHRH2e-tQ/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_445%2Cw_797&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F1c207131f844df7e74b59cbc4ecfca4a%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_Qh6PmIuW0KbYMWwKWjG-aULKdT7HLbNFElAFUvffBjnSdk93X7yh4FXDPSzg1ADBIKlWDzg20PeKAlObIE8t4T9XPdW2OTBkHsAo3RqVniLQ%3D%3D'},
+  ],
+  '12': [
+    {team:'1조 시흥 배곧 카탈로그', members:'기O훈 김O늘 서O림 임O원 정O환', link:'https://www.canva.com/design/DAHJ-w058vs/U9FLtQ3ekRPcfflRSegW4Q/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_598%2Cw_1064&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Ffba156d871cd067c145548a2797e335e%2F12__1_.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_SSZXFEd8MM8jGgmxdlHFJVoErx4vR0GmKGRuvgsQK2THRVIpYD6ouqqsuzXrHjPO8xtLZG0eJ67tbO4WNPNkhhxMgbRFW2UnAJJaX-pvujBg%3D%3D'},
+    {team:'2조 시흥 관광지', members:'김O성 김O안 박O후 이O진 박O원', link:'https://www.canva.com/design/DAHJ-zKIu_s/GKB83nbp2Xx33seRrtx2pA/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_598%2Cw_1064&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F9893ae98c5ef1635707bef4a62586c1f%2F______.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_RreO9U0jCjOUlr5PO6HbHG5XPvZjDI9fRGzIWs7VjU_-lg761ikFX2ymMB86ic6zNO2UTT8UuxnP-gVg6LRGpmXlz5y3mW-2X5A8L6rJYt5Q%3D%3D'},
+    {team:'3조 SHTT', members:'구O라 박O엘 어O준 엄O호', link:'https://www.canva.com/design/DAHJ-8X5jtM/FaeGDSdJymzJGq2PYj_unA/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_598%2Cw_1064&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F2b88c9f99670c79a0bca9676bdfd0cf7%2F_____________________________.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_QMZT-ANScWtVTPvFROHx_xJWEF6269ZzJTV1JylDUBmJoIkYhqW2VttnPz0WD5QLkqHqbSfibcoOvuZGzIglkCxg_vVwUmjvnJS5sxlZL8esB0kJV8zeR4HmS5U1fQUW6SOGFzHasypvvi_SFw0EZ_'},
+    {team:'4조 같은 하늘 아래 다양한 시흥의 모습들', members:'권O아 김O채 배O혁 이O희 최O우', link:'https://www.canva.com/design/DAHJ-zhfuZ4/0XULKbTWzidYgKWSQ-dy1Q/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_598%2Cw_1064&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fe0ddd92ccf0cdfb029173931b0f1d1a8%2F12_4.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_QO6rVNnh2zhxjhfoFVjRYk81HCGyxlg3_0eSq6eLNx51OuF4_aJ8sVrpaQL-i6vq6XuaGboEM9xjL8F9vHYgRR-QghJDWlW_2_7xwH6YPGOw%3D%3D'},
+    {team:'5조 Welcome to 시흥퀴즈쇼', members:'김O우 김O림 신O주 이O서', link:'https://www.canva.com/design/DAHJ-9r9LxE/qHxGfoK4t8P_9OPJmvZc1Q/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_598%2Cw_1064&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fdf722b9652783ab6175e8a79b7cee7cc%2F12_5.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_Sj4-VAQdu8HKL9XfaW3Ao1X5fDs0sGB1V-Gys0XJwXvInohA89WxTYslm9qz50nqPWcarfp1_zvNb4gdXcMeDtPnqBf1Qb5NBPSnONS6en-A%3D%3D'},
+    {team:'6조 시흥의 공원 탐방 게임', members:'송O우 신O결 임O율 조O아 채O린', link:'https://www.canva.com/design/DAHJ-924tPI/1-07R53HgZdmxfyDiv2I0Q/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_450%2Cw_797&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fcda7ab99cdc7d97b36d65d5cdd409e66%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_QwMw2LW5ft7eueYw6gYMGZfpGSjG7r-9lEEQCPRHSZiZ6YNTshZfP2Vz0j5ttB2iKu6C6cbSHfAHSfi86flpwv6MzDfeOuJ1pWz2DpXtzFQA%3D%3D'},
+  ],
+  '13': [
+    {team:'1조 물멍 시흥', members:'김O은 김O희 문O건 신O우 이O', link:'https://www.canva.com/design/DAHJbmCSiFg/XSxUh4H-w5jfD_CtaarPqw/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_443%2Cw_795&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fde316a80d49848117f8ca1c2daaf0792%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_SSxMBKNtr_LoW-i2Djh6FVj5O83CSnWfWX0YgyeY-SbGAHhcqF9iZB-XVcXf3invy5wx96pxV0VZhERboOK_QOSYELahcLn0PaDcHwT8vAWQ%3D%3D'},
+    {team:'2조 완벽한 시흥 여행 플래너', members:'김O윤 김O환 노O린 신O 최O서', link:'https://www.canva.com/design/DAHJbm11sxM/gHeO07oFEPBugSGCZuX1vg/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_447%2Cw_792&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F6be480d4530011bbe5aa99378f56a268%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_QOP5zh2nBL6gLaXkBcPfX0b5_7Xc04SA0U0iZtz380iS0bJlnaPQfkhUSKIHUFsJMhBz_hDv9DYbehZ_rLtMTVfOnxQw8En5dtyPT_AL-P7A%3D%3D'},
+    {team:'3조 자연과 공존하는 도시 시흥', members:'김O원 김O민 성O은 이O환 지O빈', link:'https://www.canva.com/design/DAHJbs4MDaQ/rLnoeGWzisrVT64Z_v1JGg/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_443%2Cw_792&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fcb022d9c449b5ceab60dbfba7ded26b6%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_Sug7195lQQcACWazrwJdMHGJtplpMS6JPp-PiOvZrKLl9P6SRlR70rXFn29tudAcsO-xALQZQ2N8ZjgT8a95RUSX3q5d160jatHs29OPFVuw%3D%3D'},
+    {team:'4조 Wave your life', members:'권O성 이O빈 조O준 최O원 테O', link:'https://www.canva.com/design/DAHJbvlG5Zo/AjqAe8iJbOZnlyKLRbAWfw/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_447%2Cw_792&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F1ecbe42badbb61f60991fe237609ba23%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_SHAjg8Trut8POB_X6Nue8qYFlAj5f577tI97f4iJ_bg2dcmm3NBD3gIg7AsdOfVm35GKiYajYXFsiivBxown_U7pI_Eggr1qtrHrcWzBXUdQ%3D%3D'},
+    {team:'5조 SH 마켓', members:'김O준 손O연 안O윤 정O희 한O빈', link:'https://www.canva.com/design/DAHJbi-y16Q/iupXTTwvefApNjryQQarOg/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_448%2Cw_796&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F8eb52b7c0d1b91c84b19de5ad5ae9ae2%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_QNPVBYfsVo9JRUzGdmKTCPepEKWIOgMil2BkFULQdoAPL3FeFQ3mH_OhjCOXFK2p44KmAEooTBK33WT1snu5neReN93N31EglRTDpcgKsRiA%3D%3D'},
+    {team:'6조 작은 풍경 조각', members:'김O담 김O연 노O정 한O주', link:'#', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_317%2Cw_566&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2F34f5c3f983d2268fd9f44b33ab1e6a9c%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_QKLN5k7Qu1-5yhB7ffDSskywGSqmstJXBpymD5q20-Fh76sIkIZOVNFlkKyGaU-4b60nldJqztYzwjiZ_AaorRpjo75Xh5RbB-vRJxBoYY9Q%3D%3D'},
+  ],
+  '14': [
+    {team:'1조 펀딩 발표', members:'강O연 방O은 신O희 전O용 정O우', link:'https://www.canva.com/design/DAHJC3GgFh4/3mqCioVACxG72nyBzvq72w/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_428%2Cw_763&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fc717576178db0e71a277f95d5f91c133%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_S8TudvfNGXMTzKwf2SLlV14zKKLHeEL72DIl4OH3JRxfPjQTS5e4c6BIH1HqZoSH6KRhlZevcA3bhKiAHmPC7RCSQk6VuJslaCAvCX75dWZg%3D%3D'},
+    {team:'2조 시흥 굿즈', members:'김O율 서O지 안O율 이O강 이O욱', link:'https://www.canva.com/design/DAHJC0V6IUk/k_gvkeBiuRX1F34-zWyKBg/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_403%2Cw_712&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Ff3a8e48cb93ded62d5d174e0599e85db%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_SRvP46Xy9PpW4WZ28XAxgV4Xqstzy2KVrMiHRPQExEtoZ7rh76-L3EHHVVddN1qwNdzvMvWkSLFU5cGWBdG6ROWUJ23Vuac2IZFiF8Dz7b9g%3D%3D'},
+    {team:'3조 해로토로를 찾아서', members:'김O연 박O원 박O우 이O수 정O원', link:'https://www.canva.com/design/DAHJC2tIRac/RtqYTqtLpwAHtkMFbzkE1A/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_407%2Cw_717&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fec6cfe88bc77de16f94b95ca67c46c61%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_R5Ilv1Dl6HAaPSNqjhZCzyLQQuDAqV5fnvtRs3DHO-imHfIgwizEnKE2tdPUaMguO6mSmw5bFsT0MuiPAwC7EEEvyXgnyih_aX2j76_JFS9A%3D%3D'},
+    {team:'4조 버킷리스트', members:'금O혁 김O진 신O리 오O린 이O욱', link:'https://www.canva.com/design/DAHJC5XCGYw/9yP981_lzTuBEhmGTwagng/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_402%2Cw_715&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fedc2fd5180fe5ae4562c028bda47f6df%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_QM_iY9gBOnv3llAgD-wbChmwr4KP1NKvdp923fW4W7_VtX6WTFb3eAJZ_yJtgZ4wf2mQDNrpvMaiuiUiJh1olpD_brDJ6y3WJjMbWPOQDbyA%3D%3D'},
+    {team:'5조 Siheung Travel', members:'손O성 이O희 조O현 이O희 최O채', link:'https://www.canva.com/design/DAHJCo2eSXc/J8CgaB0uzaYVut0QYYGZZQ/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_478%2Cw_845&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fd8ff3344bc72c01d999b651d18b54810%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_SNLQRxHiRQqqRTfqaqO13h39KwF0ETV6lAHJiv0lL2ES0W9ZADWKGKte1ysoN-TAL-OCeOxkiNooyy_XqetVCV8XUZPBxkiBb1wS2JFwiO-w%3D%3D'},
+    {team:'6조 시흥시 완벽하게 즐기', members:'박O완 윤O 윤O현 이O연 차O서 한O준', link:'https://www.canva.com/design/DAHJCiYA_GQ/sLN1fpFIhhyLGmxjq9m7cA/view?embed', thumbnail:'https://v1.padlet.pics/3/image.webp?t=c_limit%2Cdpr_1%2Ch_403%2Cw_722&url=https%3A%2F%2Fu1.padletusercontent.com%2Fuploads%2Fpadlet-uploads-usc1%2F631927951%2Fbcaf42af4c477929c08b47caddc252c1%2Fimage.png%3Fexpiry_token%3D5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8dmxJqYDvE2-MDbblcM-ZrVekXW99RReKkJFIoMoKiozrBCm4eW-kjcC3ka559W_R7VOJjg_WKxWQAsQaEvBlmO_ADkxvrARdqKntH7I96_66_A7GsougIhFtgRkA9wH_zdFeej9xpZHPT8SFBenXSaPJvezmgB02K58vBzRGJ0w%3D%3D'},
+  ],
+};
+
+const GALLERY_CLASSES = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14'];
+let currentGalleryClass = '1';
+
+const FB_CLASSES = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14'];
+let currentFBClass = '1';
+const fbThumbGradients = [
+  'linear-gradient(135deg,#d4e2c8,#a8c690)',
+  'linear-gradient(135deg,#e8ddd0,#c9b896)',
+  'linear-gradient(135deg,#dde4ed,#a3b8d0)',
+  'linear-gradient(135deg,#f0e6d3,#d4c4a8)',
+  'linear-gradient(135deg,#e3d8e8,#b8a3c4)',
+  'linear-gradient(135deg,#d8e8e0,#a0c8b4)',
+];
+
+function buildGalleryTabs() {
+  const wrap = document.getElementById('gallery-tabs');
+  wrap.style.cssText = 'display:flex;flex-direction:column;gap:8px;align-items:center;';
+  const row1 = document.createElement('div');
+  row1.style.cssText = 'display:flex;gap:6px;width:100%;max-width:700px;';
+  const row2 = document.createElement('div');
+  row2.style.cssText = 'display:flex;gap:6px;width:100%;max-width:700px;';
+
+  GALLERY_CLASSES.forEach((cls, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'tab-btn ' + (cls === currentGalleryClass ? 'active' : 'inactive');
+    btn.style.cssText = 'flex:1;padding:8px 0;border-radius:8px;font-family:"Noto Sans KR",sans-serif;font-size:14px;';
+    btn.textContent = cls + '반';
+    btn.onclick = () => switchGallery(btn, cls);
+    if (i < 7) row1.appendChild(btn);
+    else row2.appendChild(btn);
+  });
+  wrap.appendChild(row1);
+  wrap.appendChild(row2);
+}
+
+function switchGallery(btn, cls) {
+  document.querySelectorAll('.tab-btn').forEach(b => { b.classList.remove('active'); b.classList.add('inactive'); });
+  btn.classList.remove('inactive'); btn.classList.add('active');
+  currentGalleryClass = cls;
+  const searchEl = document.getElementById('name-search');
+  if (searchEl) searchEl.value = '';
+  renderGallery();
+}
+
+function renderGallery() {
+  const grid = document.getElementById('gallery-grid');
+  grid.innerHTML = '';
+  (artworkData[currentGalleryClass] || []).forEach((aw, i) => {
+    const item = document.createElement('div');
+    item.className = 'gallery-item';
+    item.style.cssText = 'display:flex;flex-direction:column;flex:1 1 calc(20% - 10px);min-width:110px;max-width:150px;animation-delay:'+(i*0.03)+'s;';
+
+    const imgBox = document.createElement('div');
+    imgBox.className = 'artwork-image';
+    imgBox.style.cssText = 'width:100%;aspect-ratio:2/3;border-radius:4px;overflow:hidden;position:relative;';
+
+    const gradients = [
+      'linear-gradient(135deg,#d4e2c8,#a8c690)',
+      'linear-gradient(135deg,#e8ddd0,#c9b896)',
+      'linear-gradient(135deg,#dde4ed,#a3b8d0)',
+      'linear-gradient(135deg,#f0e6d3,#d4c4a8)',
+      'linear-gradient(135deg,#e3d8e8,#b8a3c4)',
+    ];
+
+    if (aw.image) {
+      const img = document.createElement('img');
+      img.src = aw.image; img.alt = aw.student;
+      img.style.cssText = 'width:100%;height:100%;object-fit:cover;display:block;';
+      imgBox.appendChild(img);
+      imgBox.onclick = () => openModal(aw.image);
+    } else {
+      imgBox.style.background = gradients[i % gradients.length];
+      imgBox.style.display = 'flex';
+      imgBox.style.alignItems = 'center';
+      imgBox.style.justifyContent = 'center';
+      const ph = document.createElement('p');
+      ph.style.cssText = 'font-size:10px;color:rgba(0,0,0,0.35);font-family:"Noto Sans KR",sans-serif;text-align:center;padding:4px 6px;line-height:1.5;margin:0;';
+      ph.innerHTML = '📷<br>이미지<br>준비중';
+      imgBox.appendChild(ph);
+    }
+
+    const name = document.createElement('p');
+    name.style.cssText = 'color:#333;margin-top:6px;margin-bottom:2px;font-size:13px;font-family:"Noto Sans KR",sans-serif;font-weight: 400;';
+    name.textContent = aw.student;
+
+    const loc = document.createElement('p');
+    loc.style.cssText = 'color:#666;margin:0;font-size:13px;font-family:"Noto Sans KR",sans-serif;font-weight: 400;';
+    loc.textContent = aw.location;
+
+    item.appendChild(imgBox); item.appendChild(name); item.appendChild(loc);
+    grid.appendChild(item);
+  });
+}
+
+function filterGallery(query) {
+  const q = query.trim();
+  const items = document.querySelectorAll('#gallery-grid .gallery-item');
+  items.forEach(item => {
+    const ps = item.querySelectorAll('p');
+    // 첫 번째 p = '20601 강O아' 형식 — 공백 뒤 이름만 추출
+    const fullText = ps[0] ? ps[0].textContent : '';
+    const namePart = fullText.includes(' ') ? fullText.split(' ').slice(1).join(' ') : fullText;
+    const match = !q || fullText.includes(q) || namePart.includes(q);
+    item.style.display = match ? 'flex' : 'none';
+  });
+}
+
+function openModal(src) {
+  document.getElementById('modal-img').src = src;
+  document.getElementById('imageModal').classList.add('active');
+}
+function closeModal() {
+  document.getElementById('imageModal').classList.remove('active');
+  document.getElementById('modal-img').src = '';
+}
+document.getElementById('imageModal').addEventListener('click', e => {
+  if(e.target === document.getElementById('imageModal')) closeModal();
+});
+
+function buildFlipbookTabs() {
+  const wrap = document.getElementById('flipbook-tabs');
+  wrap.style.cssText = 'display:flex;flex-direction:column;gap:8px;align-items:center;';
+  const row1 = document.createElement('div');
+  row1.style.cssText = 'display:flex;gap:6px;width:100%;max-width:700px;';
+  const row2 = document.createElement('div');
+  row2.style.cssText = 'display:flex;gap:6px;width:100%;max-width:700px;';
+
+  FB_CLASSES.forEach((cls, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'tab-btn-fb ' + (cls === currentFBClass ? 'active' : 'inactive');
+    btn.style.cssText = 'flex:1;padding:8px 0;border-radius:8px;font-family:"Noto Sans KR",sans-serif;font-size:14px;';
+    btn.textContent = cls + '반';
+    btn.onclick = () => switchFB(btn, cls);
+    if (i < 7) row1.appendChild(btn);
+    else row2.appendChild(btn);
+  });
+  wrap.appendChild(row1);
+  wrap.appendChild(row2);
+}
+
+function switchFB(btn, cls) {
+  document.querySelectorAll('.tab-btn-fb').forEach(b => { b.classList.remove('active'); b.classList.add('inactive'); });
+  btn.classList.remove('inactive'); btn.classList.add('active');
+  currentFBClass = cls;
+  renderFlipbook();
+}
+
+function selectFlipbook(fb, idx, scroll) {
+  const viewer = document.getElementById('flipbook-viewer');
+  const empty = document.getElementById('flipbook-empty');
+  const info = document.getElementById('flipbook-info');
+
+  document.querySelectorAll('.fb-card').forEach((c, i) => {
+    const th = c.querySelector('.fb-thumb');
+    if (th) {
+      th.style.borderColor = i === idx ? '#2A5208' : 'transparent';
+      th.style.boxShadow = i === idx ? '0 0 0 2px #2A5208' : 'none';
+    }
+  });
+
+  info.textContent = currentFBClass + '반 ' + fb.team + (fb.members ? ' · ' + fb.members : '');
+
+  if (!fb.link || fb.link === '#') {
+    viewer.style.display = 'none'; viewer.src = '';
+    empty.style.display = 'block';
+    empty.textContent = fb.team + ' 카탈로그는 아직 링크가 등록되지 않았습니다.';
+    return;
+  }
+  empty.style.display = 'none';
+  viewer.style.display = 'block';
+  viewer.src = fb.link;
+  if (scroll) document.getElementById('flipbook-viewer-wrap').scrollIntoView({behavior:'smooth',block:'center'});
+}
+
+function renderFlipbook() {
+  const grid = document.getElementById('flipbook-grid');
+  grid.innerHTML = '';
+  const list = flipbookData[currentFBClass] || [];
+
+  list.forEach((fb, i) => {
+    const card = document.createElement('div');
+    card.className = 'fb-card';
+    card.style.cssText = 'cursor:pointer;width:110px;display:flex;flex-direction:column;align-items:center;gap:6px;transition:transform 0.2s;';
+    card.onmouseenter = () => card.style.transform = 'translateY(-3px)';
+    card.onmouseleave = () => card.style.transform = 'translateY(0)';
+
+    const hasLink = fb.link && fb.link !== '#';
+    const hasThumb = fb.thumbnail && fb.thumbnail.trim() !== '';
+
+    const thumb = document.createElement('div');
+    thumb.className = 'fb-thumb';
+    thumb.style.cssText = 'width:100%;aspect-ratio:4/3;border-radius:6px;overflow:hidden;border:2px solid transparent;transition:border-color 0.2s,box-shadow 0.2s;position:relative;';
+
+    if (hasThumb) {
+      const img = document.createElement('img');
+      img.src = fb.thumbnail; img.alt = fb.team;
+      img.style.cssText = 'width:100%;height:100%;object-fit:cover;display:block;';
+      thumb.appendChild(img);
+    } else {
+      thumb.style.background = fbThumbGradients[i % fbThumbGradients.length];
+      thumb.style.display = 'flex'; thumb.style.alignItems = 'center'; thumb.style.justifyContent = 'center';
+    }
+
+    if (!hasLink) card.style.opacity = '0.6';
+
+    const lbl = document.createElement('p');
+    lbl.style.cssText = 'font-size:13px;color:#555;text-align:center;font-family:"Noto Sans KR",sans-serif;line-height:1.3;margin:0;word-break:keep-all;';
+    lbl.title = fb.team;
+    lbl.textContent = fb.team.length > 10 ? fb.team.slice(0, 10) + '…' : fb.team;
+
+    card.appendChild(thumb); card.appendChild(lbl);
+    card.onclick = () => selectFlipbook(fb, i, true);
+    grid.appendChild(card);
+  });
+
+  const firstOk = list.findIndex(f => f.link && f.link !== '#');
+  selectFlipbook(list[firstOk >= 0 ? firstOk : 0], firstOk >= 0 ? firstOk : 0, false);
+}
+
+// Formspree 방명록 처리
+document.getElementById('guestbook-form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const btn = document.querySelector('#guestbook-form button[type="submit"]');
+  btn.disabled = true; btn.textContent = '전송 중...';
+  try {
+    const res = await fetch(this.action, {
+      method: 'POST',
+      body: new FormData(this),
+      headers: { 'Accept': 'application/json' }
+    });
+    if (res.ok) {
+      this.classList.add('hidden');
+      document.getElementById('success-message').classList.remove('hidden');
+    } else {
+      alert('전송 중 오류가 발생했습니다. 잠시 후 다시 시도해주세요.');
+      btn.disabled = false; btn.textContent = '제출하기';
+    }
+  } catch {
+    alert('네트워크 오류가 발생했습니다.');
+    btn.disabled = false; btn.textContent = '제출하기';
+  }
+});
+
+// 초기화
+buildGalleryTabs();
+renderGallery();
+buildFlipbookTabs();
+renderFlipbook();
+</script>
+</body>
+</html>
